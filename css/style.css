@@ -1,0 +1,30 @@
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.header{
+    padding: 20px 0;
+}
+.homenavbar{
+    display: flex;
+    justify-content: space-between;
+}
+.homelogo{
+    margin: 0;
+    width: 190px;
+    text-decoration: none;
+}
+.homelogo img{
+    width: 66px;
+}
+.homelogo .home_trademark{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+.homenavbar .navbar-collapse{
+    flex-grow: 0;
+}
+.home-navbar-item{
+    margin-left: 12px;
+}
