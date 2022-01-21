@@ -5,6 +5,13 @@
 .header{
     padding: 20px 0;
 }
+.body-background-color{
+    position: absolute;
+    right: 0;
+}
+.body-background-color img{
+    width: 60vw;
+}
 .homenavbar{
     display: flex;
     justify-content: space-between;
@@ -15,16 +22,28 @@
     text-decoration: none;
 }
 .homelogo img{
-    width: 66px;
+    width: 3.2rem;
 }
 .homelogo .home_trademark{
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
+    margin-left: 8px;
+    color: #018cca;
 }
 .homenavbar .navbar-collapse{
     flex-grow: 0;
 }
 .home-navbar-item{
     margin-left: 12px;
+}
+
+.home-navbar-item .menu-nav-link{
+    color: #616161;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.body .banner svg{
+    margin: 0 auto;
 }

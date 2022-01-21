@@ -1,7 +1,46 @@
-@media (min-width: 992px)
+body{
+    background-color: #f4f9f8;
+    position: relative;
+}
+
+
+@media (min-width: 769px)
 {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.25rem;
-        padding-left: 1.25rem;
+    .home-navbar-item .menu-nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
+
+   
+}
+
+@media (max-width: 769px)
+{
+    .homenavbar .navbar-collapse{
+        flex-grow: 0;
+        position: absolute;
+        width: 100%;
+        top: calc( 100%);
+        border: 1px solid silver;
+        border-radius: 2px 2px 6px 6px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .body .banner svg{
+        display: flex;
+        width: 18rem;
+    }
+
+    .body-background-color img{
+        width: 80vw;
+    }
+    
+}
+
+@media (min-width: 1400px)
+{
+    body  .container{
+    max-width: 1140px;
+}
+
 }
