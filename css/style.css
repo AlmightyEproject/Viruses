@@ -40,11 +40,41 @@
 }
 
 .home-navbar-item .menu-nav-link{
-    color: #616161;
+    color: #414141;
     font-weight: 600;
     text-decoration: none;
 }
 
 .body .banner svg{
     margin: 0 auto;
+}
+.body .direction{
+    align-items: center;
+}
+
+.body .header-title{
+    color: #018cca;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.header-title-1{
+    position: relative;
+    bottom: 12px;
+}
+.small-title{
+    color: #414141;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.p-content{
+    margin: 20px 0;
+    color: #414141;
+    line-height: 30px;
+}
+.btn-start{
+    background-color: #53c1ec;
+    border-radius: 20px;
+    padding: 0.5rem 1.125rem;
 }

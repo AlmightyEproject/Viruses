@@ -34,12 +34,13 @@ body{
    
 }
 
-@media (max-width: 769px)
+@media (max-width: 992px)
 {
     .body .banner svg{
         display: flex;
         width: 18rem;
     } 
+
 }
 
 @media (min-width: 1400px)
