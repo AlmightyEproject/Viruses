@@ -1,16 +1,21 @@
 *{
     font-family: 'Readex Pro', sans-serif;
 }
+body{
+    background-color: #f4f9f8;
+    position: relative;
+}
 
 .header{
     padding: 20px 0;
 }
 .body-background-color{
+    z-index: -999;
     position: absolute;
     right: 0;
 }
 .body-background-color svg {
-    width: 60vw;
+    width: 58vw;
     height: auto;
 }
 .homenavbar{
@@ -21,15 +26,16 @@
     margin: 0;
     width: 190px;
     text-decoration: none;
+
 }
 .homelogo img{
     width: 3.2rem;
+    margin-right: 8px;
 }
-.homelogo .home_trademark{
+.home_trademark{
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 8px;
     color: #018cca;
 }
 .homenavbar .navbar-collapse{
@@ -46,6 +52,8 @@
 }
 
 .body .banner svg{
+    width: 32rem;
+    float: right;
     margin: 0 auto;
 }
 .body .direction{
@@ -77,4 +85,53 @@
     background-color: #53c1ec;
     border-radius: 20px;
     padding: 0.5rem 1.125rem;
+}
+
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: #e6f2f9;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+.p-content-sm{
+    font-size: 14px;
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.contact-list .contact-list-item{
+    margin-right: 16px;
+}
+.contact-list .contact-list-item svg{
+    width: 20px;
+}
+.footer-apps{
+    margin-top: 30px;
+    display: flex;
+}
+.img-qr-code{
+    padding-right: 4px;
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+}
+.app-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.app-link-item img{
+    width: 122px;
 }

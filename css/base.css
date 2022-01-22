@@ -1,9 +1,3 @@
-body{
-    background-color: #f4f9f8;
-    position: relative;
-}
-
-
 @media (max-width: 992px){
     .homenavbar .navbar-collapse{
         padding-top: 8px;
@@ -19,8 +13,14 @@ body{
     .home-navbar-item{
         line-height: 40px;
     }
-}
+    .banner{
+        display: flex;
+    }
+    .body .banner svg{
+        width: 52%;
+    } 
 
+}
 @media (min-width: 768px)
 {
     .home-navbar-item .menu-nav-link {
@@ -28,25 +28,14 @@ body{
         padding-left: 1rem;
         line-height: 36px;
     }
-
- 
-
-   
 }
 
-@media (max-width: 992px)
-{
-    .body .banner svg{
-        display: flex;
-        width: 18rem;
-    } 
 
-}
 
-@media (min-width: 1400px)
+/* @media (min-width: 1400px)
 {
     body  .container{
     max-width: 1140px;
 }
 
-}
+} */
