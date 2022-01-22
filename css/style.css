@@ -9,8 +9,9 @@
     position: absolute;
     right: 0;
 }
-.body-background-color img{
+.body-background-color svg {
     width: 60vw;
+    height: auto;
 }
 .homenavbar{
     display: flex;
