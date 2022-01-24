@@ -7,7 +7,7 @@ body{
 }
 
 .header{
-    padding: 20px 0;
+    padding-top: 20px;
 }
 .body-background-color{
     z-index: -999;
@@ -54,13 +54,18 @@ body{
 .body .banner svg{
     width: 32rem;
     float: right;
-    margin: 0 auto;
+}
+.body .banner img{
+    float: left;
+    width: 90%;
 }
 .body .direction{
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .body .header-title{
+    margin: 0;
     color: #018cca;
     font-size: 24px;
     font-weight: 600;
@@ -72,7 +77,7 @@ body{
 }
 .small-title{
     color: #414141;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     line-height: 40px;
 }

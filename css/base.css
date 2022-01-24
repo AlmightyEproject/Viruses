@@ -16,9 +16,13 @@
     .banner{
         display: flex;
     }
-    .body .banner svg{
-        width: 52%;
+    .body .banner svg,.body img{
+        width: calc( 60% + 32px );
+        margin: 20px auto;
     } 
+    .body .direction{
+        margin-bottom: 48px;
+    }
 
 }
 @media (min-width: 768px)
