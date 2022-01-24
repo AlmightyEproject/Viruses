@@ -67,7 +67,7 @@ body{
 .body .header-title{
     margin: 0;
     color: #018cca;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
     line-height: 70px;
 }
@@ -90,11 +90,81 @@ body{
     background-color: #53c1ec;
     border-radius: 20px;
     padding: 0.5rem 1.125rem;
+    margin-top: 8px;
 }
+/* Body */
+.test{
+    margin-top: 70px;
+    background: rgba(104, 201, 186, 0.1);
+    border-radius: 10% 100% 10% 10%/10% 40% 10% 10%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 290px;
+    position: relative;
+}
+.card{
+    padding-top: 36px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 290px;
+    max-width: 432px;
+    position: relative;
+    width: 80%;
+    border-radius: 40% 10% 10% 10%/100% 10% 10% 10%;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    margin: auto;
+    margin-top: 70px;
+    border: none;
+}
+.card-title{
+    font-size: 28px;
+    color: #018cca;
+    margin-bottom: 20px;
+}
+.card img{
+    position: absolute;
+    width: 180px;
+    left: -70px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-bottom: 0px;
+}
+.card .p-content{
+    margin: 0 52px 0 132px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 
-
-
-
+}
+.card .card-link{
+    margin-top: 20px;
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 18px;
+}
+#card1{
+    background-color: rgba(166,255,246,0.5);
+}
+#card2{
+    background-color: rgb(231,225,255,0.5);
+}
+#card3{
+    background-color: rgb(189 210 255 / 50%);
+}
+#card4{
+    background-color: rgb(164,255,211,0.5);
+  
+}
 
 
 /* footer */
@@ -183,3 +253,4 @@ body{
 .fa-instagram{
     color: #d6249f;
 }
+
