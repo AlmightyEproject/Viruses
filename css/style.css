@@ -6,9 +6,10 @@ body{
     position: relative;
 }
 
-.header{
-    padding-top: 20px;
+.nav-header{
+    height: 56px;
 }
+
 .body-background-color{
     z-index: -999;
     position: absolute;
@@ -29,7 +30,7 @@ body{
 
 }
 .homelogo img{
-    width: 3.2rem;
+    width: 2.4rem;
     margin-right: 8px;
 }
 .home_trademark{
@@ -165,7 +166,37 @@ body{
     background-color: rgb(164,255,211,0.5);
   
 }
-
+.body .body-sub{
+    margin-bottom: 48px;
+}
+#form-sub{
+    width: 560px;
+    margin: 0 auto;
+    position: relative;
+}
+#input-sub{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid #1da1f2 ;
+    padding: 0 24px;
+    outline: none;
+}
+#btn-sub{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4.2px;
+    background-color: #53c1ec;
+    border-radius: 40px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #212529;
+}
+.div-sub{
+    margin-top: 24px;
+}
 
 /* footer */
 .footer{
