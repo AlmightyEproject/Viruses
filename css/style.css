@@ -199,8 +199,11 @@ body{
 }
 .body .blog-list{
     background-color: #53c1ec;
-    border-radius: 20px;
-    padding: 4px 0px;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 0;
+    padding-right: 0;
     height: auto;
     margin-top: 70px;
     
@@ -208,7 +211,7 @@ body{
 .blog-row{
     display: flex;
     overflow-x: scroll;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
     margin-top: 4px;
 }
 .blog-row::-webkit-scrollbar {
@@ -246,7 +249,35 @@ body{
     color: #414141;
     font-weight: 600;
 }
+.col-body{
+    flex: 0 0 auto;
+    width: 95.83333333%;
+    align-items:center;
+    display: flex;
+}
+.col-wing{
+    flex: 0.5;
+    width: 2.0833333333%;
+    align-items:center;
+    display: flex;
+    padding: 0;
+}
+.col-wing i{
+    font-size: 2.5em;
+    color: #f4f9f8;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: 1s right ,left 1s;
 
+}
+.col-wing .fa-caret-left:hover{
+    position: relative;
+    right: 4px;
+}
+.col-wing .fa-caret-right:hover{
+    position: relative;
+    left: 4px;
+}
 
 /* footer */
 .footer{
