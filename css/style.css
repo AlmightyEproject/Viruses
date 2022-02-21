@@ -5,6 +5,9 @@ body{
     background-color: #f4f9f8;
     position: relative;
 }
+.header{
+    background-color: #cbecff;
+}
 
 .nav-header{
     height: 56px;
@@ -30,7 +33,7 @@ body{
 
 }
 .homelogo img{
-    width: 2.4rem;
+    width: 2.8rem;
     margin-right: 8px;
 }
 .home_trademark{
@@ -263,9 +266,117 @@ body{
 
 }
 
+.blog-col-body{
 
+}
 
+.small-title .p-content-sm{
+    text-align: justify;
+}
+.box-img-content img{
+    width: 100%;
+    
 
+}
+.menu-option-list{
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu-right .menu-option-list{
+    line-height: 36px;
+}
+.menu-drop-down{
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    background-color: red;
+    width: 100%;
+}
+.item-list{
+    position: relative;
+}
+.menu-option-drop-down{
+    padding: 0;
+    list-style: none;
+}
+.menu-left{
+    position: sticky;
+    left: 0;
+    top: 64px;
+    display: block;
+}
+.menu-right{
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+.menu-sub{
+    display: none;
+    list-style: none;
+}
+.btn-drop-down{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.menu-option-item{
+    line-height: 40px;
+}
+.btn-drop-down i{
+    margin-right: 6px;
+    font-size: 20px;
+    transition: all 200ms;
+}
+.menu-option-item .active{
+    border: 1px solid #1da1f2;
+    border-radius: 8px;
+    transition: all 100ms;
+    background-color: rgb(83 193 236 / 0.1);
+}
+.menu-option-item .btn-drop-down:hover{
+    background-color: rgb(83 193 236 / 0.1);
+    border-radius: 8px;
+}
+.turn-down{
+    transform: rotate(90deg);
+}
+
+/* test input */
+input[type="text"]{
+    width: 320px;
+    box-sizing: border-box;
+    border: 1px solid #018cca;
+    border-radius: 4px;
+    outline: #53c1ec;
+    padding: 7px 12px;
+    transition: 0.6s ease-in-out;
+}
+input[type="text"]:hover,input[type="text"]:focus{
+    width: 500px;
+}
+
+#form-search{
+    margin: 0px 0;
+}
+.dropdown-language{
+    float: right;
+    border: 1px solid #1da1f2;
+    border-radius: 4px;
+}
+.container-search{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 1px -3px;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    background-color: #f4f9f8;
+    z-index: 10;
+}
+/*  */
 
 /* footer */
 .footer{
@@ -274,7 +385,8 @@ body{
     padding-bottom: 16px;
 }
 .p-content-sm{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .contact-list{
