@@ -1,0 +1,40 @@
+*{
+  font-family: 'Readex Pro', sans-serif;
+  color: #414141;
+}
+.container-full{
+  display: block;
+}
+.left{
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(79, 230, 183,0.3);
+}
+
+.logo{
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  align-items: center;
+  top: 12px;
+  left: 12px;
+}
+.logo img{
+  width: 2.8rem;
+  margin-right: 8px;
+}
+.logo span{
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+svg{
+  left: 50%;
+  width: 64%;
+  position: absolute;
+  top: 50%;
+  transform: translateY( calc( -50% - 80px ) ) translateX(-50%);
+}
