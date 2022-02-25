@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Vertex.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <title>Home</title>
+</head>
+<body>
+<header class="header">
+    <!-- <div class="body-background-color">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+            <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+          </svg>
+    </div> -->
+    <div class="container">
+        <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid nav-header">
+                <a class="homelogo" href="#">
+                    <img  src="./img/Vertex.jpg" alt="">
+                    <span class="home_trademark">Vertex</span>
+                </a>
+                <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                        <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Virus</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Statistic</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">About</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<nav class="container-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="form-search">
+                    <input type="text" placeholder="Search..">
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="dropdown dropdown-language">
+                    <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                        <span class="d-none d-lg-inline">English</span> v5.1
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                        <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div class="body container">
+    <article class="header-title">
+        <div class="row">
+
+            <hr>
+            <div class="col-2">
+                <ul class="menu-option-list menu-left">
+                    <select style="width:100%" id="states">
+                        <optgroup label="A">
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                        </optgroup>
+                        <optgroup label="B">
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="AZ">Arizona</option>
+                            <option value="CO">Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                        </optgroup>
+                        <optgroup label="D">
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="WI">Wisconsin</option>
+                        </optgroup>
+                        <optgroup label="E">
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="IN">Indiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="OH">Ohio</option>
+                            <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WV">West Virginia</option>
+                        </optgroup>
+                    </select>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tìm kiếm Virus</button>
+
+
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                        </ul>
+                    </li>
+                    <ul class="menu-sub">
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                    </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tổng quan về Virus</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Dòng lịch sử về virus</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Nguồn gốc</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đặc điểm sinh học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phân loại</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Virus ở người</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Ứng Dụng</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Khoa học y học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Khoa học vật liệu</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Virus nhân tạo</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Vũ khí sinh học</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Vai trò</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Lây nhiễm</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <h1>Virus là gì? Sự hình thành của Virus?</h1>
+
+                <p class="head">Virus là ký sinh trùng siêu nhỏ, thường nhỏ hơn nhiều so với vi khuẩn. Chúng thiếu khả năng phát triển và sinh sản bên ngoài cơ thể vật chủ. Phần lớn virus là nguyên nhân gây bệnh. Thế giới đã trải qua sự bùng phát dịch Ebola năm 2014 ở Tây Phi, đại dịch cúm lợn năm 2009. Và hiện nay là đại dịch Covid-19 đang gây nguy hiểm cho tất cả mọi người.</p>
+                <section class="small-title">
+                    <h2>1. Virus là gì?</h2>
+
+                    <p class="p-content p-content-sm">
+                        <strong>Virus</strong> là một loại ký sinh trùng nhỏ không thể tự sinh sản. Tuy nhiên, một khi virus lây nhiễm vào một tế bào nhạy cảm, nó có thể điều khiển bộ máy tế bào tạo ra nhiều virus hơn. Hầu hết các virus có RNA và DNA là vật liệu di truyền của chúng. Acid nucleic có thể là chuỗi đơn hoặc chuỗi kép. Toàn bộ hạt virus truyền nhiễm được gọi là virion, bao gồm acid nucleic và vỏ ngoài của protein.<br>
+                        <br>
+                        <strong>Virus</strong> không chứa ribosome vì thế chúng không thể tạo ra protein. Điều này làm cho nó hoàn toàn phụ thuộc vào vật chủ ký sinh. Chúng là loài sinh vật duy nhất không thể sinh sản mà không có tế bào vật chủ.<br>
+                        <br>
+                        Sau khi liên lạc với tế bào vật chủ thì nó sẽ chèn vật liệu di truyền vào vật chủ và chiếm lấy chức năng của vật chủ đó. Sau khi lây nhiễm vào tế bào, virus tiếp tục sinh sản nhưng nó tạo ra nhiều protein và vật liệu di truyền hơn thay vì các sản phẩm tế bào thông thường. Các virus đơn giản nhất chỉ chứa đủ RNA hoặc DNA để có thể mã hoá bốn protein. Còn với các virus phức tạp, có thể mã hoá khoảng từ 100 - 200 protein.
+                    </p>
+
+                </section>
+
+                <section class="small-title">
+                    <figure>
+                        <p class="img"><img src="img/lvr.png" height="369" width="512"/></p> <figcaption>Virus có nhiều chủng loại khác nhau</figcaption>
+                    </figure>
+                    <div>
+                    <p class="p-content p-content-sm">
+                        Virus có hình dạng và kích thước khác nhau và chúng có thể được phân loại như sau:
+                    </p>
+                        <ul>
+                            <li class="nd">
+                                <b>Xoắn Ốc</b> :Virus khảm thuốc lá có hình dạng xoắn ốc.
+                            </li>
+                            <li class="nd">
+                                <b>Hình Cầu</b> :Hầu hết các loại virus động vật đều có hình dạng như ảnh trên.
+                            </li>
+                            <li class="nd">
+                                <b>Hình Phong Bì</b> :Một số virus bao phủ bản thân với một phần được sửa chữa của màng tế bào,
+                                <br>tạo ra một lớp vỏ lipid để bảo vệ. Chúng bao gồm virus cúm và virus HIV.
+                            </li>
+                        </ul>
+                        <p class="p-content p-content-sm">
+                            Ngoài ra, các hình dạng này có thể được kết hợp với nhau tạo ra các hình dạng của virus không theo tiêu chuẩn nào cả.
+                        </p>
+                    </div>
+                </section>
+                <section class="small-title">
+                    <h2>2. Sự hình thành của virus</h2>
+                    <p class="p-content p-content-sm">
+                        Virus được tìm thấy ở bất cứ nơi nào có sự sống và có lẽ đã tồn tại kể từ khi các tế bào sống phát triển đầu tiên. Nguồn gốc của virus không rõ ràng vì chúng không tạo thành hóa thạch. Cho nên, các nhà khoa học đã sử dụng kỹ thuật phân tử để so sánh DNA hoặc RNA của virus và đây cũng là phương tiện hữu ích để điều tra cách chúng phát sinh.
+                        <br>
+                        <br>
+                        Virus được tìm thấy ở bất cứ nơi nào có sự sống và có lẽ đã tồn tại kể từ khi các tế bào sống phát triển đầu tiên. Nguồn gốc của virus không rõ ràng vì chúng không tạo thành hóa thạch. Cho nên, các nhà khoa học đã sử dụng kỹ thuật phân tử để so sánh DNA hoặc RNA của virus và đây cũng là phương tiện hữu ích để điều tra cách chúng phát sinh.
+                        <br>
+                        <br>
+                        Có ba giả thuyết chính nhằm giải thích <strong>sự hình thành của virus:</strong>
+                        <br>
+                        <br>
+                        <ul>
+                    <li class="nd"><b>Giả thuyết hồi quy:</b><br><p class="p-content p-content-sm">Virus có thể đã từng là những tế bào nhỏ ký sinh trên các tế bào lớn hơn. Theo thời gian, các gen không được yêu cầu bởi ký sinh trùng của chúng sẽ bị mất đi. Vi khuẩn rất nhỏ như rickettsia và chlamydia là những tế bào sống, giống như virus và chỉ sinh sản bên trong tế bào vật chủ. Giả thuyết nào cho thấy sự phụ thuộc của ký sinh trùng có khả năng gây ra sự mất gen cho phép sống sót ở bên ngoài một tế bào. Đây cũng có thể được gọi là giả thuyết thoái hóa hoặc giả thuyết giảm.</p></li>
+                    <li class="nd"><b>Giả thuyết nguồn gốc tế bào:</b><br><p class="p-content p-content-sm">Một số virus có thể đã tiến hóa từ DNA hoặc RNA và thoát ra khỏi gen của một sinh vật lớn hơn. DNA thoát ra có thể đến từ các plasmids ( là các mảnh DNA trần có thể di chuyển giữa các tế bào), hoặc transposons (các phân tử DNA sao chép và di chuyển đến các vị trí khác nhau trong gen của tế bào). Từng được gọi là “gen nhảy” transposon là ví dụ về các yếu tố di truyền và có thể là nguồn gốc của một số virus. Chúng được phát hiện trên ngô bởi Barbara McClintock vào năm 1950.</p></li>
+                </ul>
+                    <figure>
+                        <p class="img"><img src="img/Rnav.png" height="369" width="512"/></p><figcaption>RNA của virus</figcaption>
+                    </figure>
+                    <ul>
+                        <li class="nd"><b>Giả thuyết đồng tiến hóa:</b><br><p class="p-content p-content-sm">Đây được gọi là giả thuyết đầu tiên về virus, và cho rằng virus có thể đã tiến hóa từ các phân tử phức tạp của protein và acid nucleic cùng lúc với tế bào xuất hiện lần đầu tiên trên Trái Đất. Và nó sẽ phụ thuộc vào sự sống của tế bào trong hàng tỷ năm.
+                            <br><br><strong>Viroids </strong> là các phân tử RNA không được phân loại là virus vì chúng thiếu lớp vỏ protein. Chúng có những đặc điểm chung cho một số loại virus và thường được gọi là tác nhân phụ. Viroids là mầm bệnh quan trọng của thực vật. Chúng không mã hóa protein nhưng tương tác với tế bào vật chủ và sử dụng bộ máy của vật chủ để sao chép.
+                            <br><br>
+
+                            <strong>Virus viêm gan delta</strong> của người có bộ gen RNA tương tự viroid nhưng có vỏ protein và có nguồn gốc từ virus viêm gan B đồng thời cũng không thể tự sản xuất. Do đó, nó là một virus bị lỗi. Mặc dù bộ gen của virus viêm gan delta có thể được sao chép độc lập một lần trong tế bào vật chủ, nhưng nó vẫn cần có sự trợ giúp của virus viêm gan B để cung cấp một lớp vỏ protein để nó có thể truyền đến các tế bào mới. Vì vậy, những loại virus này phụ thuộc vào sự hiện diện của các loại virus khác trong tế bào chủ, được gọi là vệ tinh và có thể đại diện cho các trung gian tiến hóa của viroid và virus.
+                            <br><br>
+
+                            Trước đây, có những vấn đề với tất cả những giả thuyết này: <strong>giả thuyết hồi quy</strong> không giải thích được tại sao ngay cả những ký sinh trùng tế bào nhỏ nhất cũng không giống với virus. <strong>Giả thuyết nguồn gốc tế bào</strong> cũng không giải thích được viên nang phức tạp và cấu trúc khác trên các hạt virus. Giả thuyết đầu tiên về virus đã chống lại định nghĩa về virus ở chỗ chúng yêu cầu tế bào vật chủ. <strong>Virus</strong> hiện được công nhận là cổ xưa và có nguồn gốc từ trước sự phân kỳ của sự sống.
+                            <br><br>
+
+                            Bằng chứng về thế giới tổ tiên của tế bào RNA và phân tích máy tính về trình tự DNA của virus và vật chủ đang giúp hiểu rõ hơn về mối quan hệ tiến hoá giữa các loại virus khác nhau, và có thể xác định tổ tiên của virus hiện đại. Dường như tất cả các loại virus hiện được biết đến đều có chung một tổ tiên và virus có thể đã phát sinh nhiều lần trong quá khứ bởi một hoặc nhiều cơ chế.</p></li>
+                    </ul>
+                    </p>
+                    <figure>
+                        <p class="img"><img src="img/VrB.png" height="369" width="512"/></p><figcaption>Virus viêm gan B</figcaption>
+                    </figure>
+                </section>
+                <section class="small-title">
+                    <h2>3. Ai tìm ra virus?</h2>
+                    <p class="p-content p-content-sm">
+                        Đến cuối thế kỷ 19, quan niệm rằng các vi sinh vật đặc biệt là vi khuẩn có thể gây bệnh đã được thiết lập tốt. Tuy nhiên, các nhà nghiên cứu đang tìm kiếm một căn bệnh đáng lo ngại trong thuốc lá - có phần khó hiểu về nguyên nhân của nó.
+                        <br><br>
+
+                        Trong một bài viết nghiên cứu năm 1886 có tự đề là “Liên quan đến bệnh khảm của thuốc lá” của nhà hoá học người Đức Adolf Mayer, đã công bố phát hiện rằng khi ông nghiền nát những chiếc lá bị nhiễm bệnh và tiêm nước độc hại vào tĩnh mạch của chiếc lá khoẻ mạnh, điều đó sẽ dẫn gây ra các đốm và đổi màu trên lá.
+                        <br><br>
+
+                        Mayer phỏng đoán chính xác rằng điều gây ra <strong>bệnh khảm thuốc lá</strong> bắt đầu từ trong nước ép lá. Tuy nhiên, kết quả cụ thể hơn đã không đúng với phỏng đoán của ông. Mayer cảm thấy chắc chắn rằng điều mà gây ra căn bệnh này đều có nguồn gốc từ vi khuẩn, nhưng ông không thể phân lập được tác nhân gây bệnh hoặc xác định nó dưới kính hiển vi.
+                        <br><br>
+                        Năm 1898, khi dự hiện diện của <strong>virus</strong> được thừa nhận, nhà khoa học người Hà Lan Martinus Beijerinck đã cho rằng nguyên nhân gây bệnh khảm thuốc lá không phải là vi khuẩn mà là một loại virus sống trong chất lỏng. Và các thí nghiệm sau đó của ông cũng đã chỉ ra sự tồn tại của virus.
+                        <br><br>
+                        Đến năm 1931 một kính hiển vi điện tử được phát triển bởi nhà khoa học người Đức Ernst Ruska và Max Knoll. Những hình ảnh đầu tiên về virus khảm thuốc lá đã được chủ bởi Ruska vào năm 1939. Do đó, việc phát hiện <strong>virus</strong> đã được xuất hiện.
+                    </p>
+
+                </section>
+            </div>
+
+
+        </div>
+
+
+    </article>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <span class="home_trademark">Vertex</span>
+                <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt=""> &nbsp; 24/7 support</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                    </li>
+                </ul>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <span class="home_trademark">Virus dictionary for phones</span>
+                <div class="footer-apps">
+                    <img class="img-qr-code" src="./img/qrcode.png" alt="">
+                    <ul class="app-list">
+                        <li class="app-list-item">
+                            <img src="./img/app_store.png" alt="">
+                        </li>
+                        <li class="app-list-item">
+                            <img src="./img/google_play.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <span class="home_trademark">Information</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <span class="home_trademark">Contact</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span class="home_trademark">Where to find us?</span>
+                <p class="footer-map-icon">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England
+                </p>
+
+                <div class="footer-map">
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4" allowfullscreen="" title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/select2.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#states").select2();
+    });
+</script>
+
+
+
+</body>
+</html>

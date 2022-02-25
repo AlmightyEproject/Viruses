@@ -1,28 +1,7 @@
 $(document).ready(function(){
-    var maxleftscroll = 1669
-    $(".fa-caret-right").click(function(){
-
-        $(".blog-row").animate(
-            {
-                scrollLeft : "+=212px"
-            },500
-        )
-        
-        
-        
-        
+    $('.btn-drop-down').click(function(){
+       $(this).toggleClass('active')
+       $(this).parent('li').children('ul').slideToggle(200)
+       $(this).children('i').toggleClass('turn-down')
     })
-    $(".fa-caret-left").click(function(){
-        $(".blog-row").animate(
-            {
-                scrollLeft : "-=212px"
-            },500
-        )
-        
-    })
-    
-
-
-
 })
-
