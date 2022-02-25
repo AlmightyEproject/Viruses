@@ -345,8 +345,8 @@ li.nd{
 .menu-left::-webkit-scrollbar {
     width: 6px;
     background-color: transparent;
-   
-} 
+
+}
 .menu-left::-webkit-scrollbar-thumb {
     background-color: #c9c9c9;
     border-radius: 8px;
