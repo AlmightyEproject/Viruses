@@ -189,8 +189,6 @@ li.nd{
     width: 180px;
     left: -70px;
     margin: 0;
-    top: 50%;
-    transform: translateY(-50%);
     padding-bottom: 0px;
 }
 .card .p-content {
@@ -645,8 +643,10 @@ li.nd{
 .item-history{
     border-bottom: 2px solid #e5e5e5;
 }
-.user-view-history{
-
+.user-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 16px 0 32px 0px;
 }
 .user-view-history::-webkit-scrollbar {
     width: 6px;
@@ -672,17 +672,50 @@ li.nd{
     position: relative;
     display: flex;
     list-style: none;
+    margin: 0;
 }
 .item-list-selection{
    width: 50%;
    text-align: center;
-   padding: 8px 0;
-   cursor: pointer;
+   padding: 10px 0 ;
+   cursor: pointer; 
+   font-size: 20px;
+   font-weight: 500;
 }
+.item-list-selection:hover{
+    border-bottom: 2px solid #018cca;
+    margin-bottom: -2px;
+    color: #018cca;
+ } 
 .item-list-selection .active{
     border-bottom: #018cca 1px solid;
+
     
 }
+
+.link-info{
+    display: flex;
+    align-items: center;
+    padding: 12px 4px;
+    text-decoration: none;
+}
+.link-info + .link-info{
+    border-top: 1px solid #dadada;
+}
+.img-info{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.img-info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+.name-info span{
+    text-decoration: none;
+}
+
+
 .user-other-tasks{
     margin-top: 40px;
 }
