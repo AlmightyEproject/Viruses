@@ -4,4 +4,10 @@ $(document).ready(function(){
        $(this).parent('li').children('ul').slideToggle(200)
        $(this).children('i').toggleClass('turn-down')
     })
+
+    $("#btn-option-list").click(function(){
+        $(".menu-left").slideToggle(250)
+        $(this).children('span').children('svg').toggleClass('d-none')
+    })
+
 })
