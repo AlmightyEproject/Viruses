@@ -893,7 +893,11 @@ li.nd{
 .row-member{
     margin-top: 60px;
 }
-
+.About-us-title{
+    margin-top: 40px;
+    text-align: center;
+    color: #018cca;
+}
   
 /* footer */
 .footer {
