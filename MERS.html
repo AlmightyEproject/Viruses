@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Vertex.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>Home</title>
+</head>
+<body>
+<header class="header">
+    <!-- <div class="body-background-color">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+            <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+          </svg>
+    </div> -->
+    <div class="container">
+        <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid nav-header">
+                <a class="homelogo" href="#">
+                    <img  src="./img/Vertex.jpg" alt="">
+                    <span class="home_trademark">Vertex</span>
+                </a>
+                <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                        <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Virus</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Statistic</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">About</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<nav class="container-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="form-search">
+                    <input type="text" placeholder="Search..">
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="dropdown dropdown-language">
+                    <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                        <span class="d-none d-lg-inline">English</span> v5.1
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                        <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                        <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div class="body container">
+    <article class="header-title">
+        <div class="row">
+
+            <hr>
+            <div class="col-2">
+                <ul class="menu-option-list menu-left">
+                    <select style="width:100%" id="states">
+                        <optgroup label="A">
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                        </optgroup>
+                        <optgroup label="B">
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="AZ">Arizona</option>
+                            <option value="CO">Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                        </optgroup>
+                        <optgroup label="D">
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="WI">Wisconsin</option>
+                        </optgroup>
+                        <optgroup label="E">
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="IN">Indiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="OH">Ohio</option>
+                            <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WV">West Virginia</option>
+                        </optgroup>
+                    </select>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tìm kiếm Virus</button>
+
+
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                        </ul>
+                    </li>
+                    <ul class="menu-sub">
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                        <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                    </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tổng quan về Virus</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Dòng lịch sử về virus</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Nguồn gốc</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đặc điểm sinh học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phân loại</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Virus ở người</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Ứng Dụng</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Khoa học y học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Khoa học vật liệu</a></li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Virus nhân tạo</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Vũ khí sinh học</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Vai trò</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu-option-item">
+                        <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Lây nhiễm</button>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <section class="small-title">
+                    <h2>MERS-CoV: Nguồn gốc, đường lây truyền, cách nhận biết và điều trị</h2>
+                    <p class="head">Cập nhật ngày 26 tháng 2 năm 2022</p>
+                    <p class="p-content p-content-sm">MERS là chữ viết tắt của cụm từ Middle East Respiratory Syndrome, tạm dịch là “Hội chứng hô hấp Trung Đông” xảy ra vào năm 2012, gây ra suy hô hấp cấp dẫn tới tử vong ở nhiều nước trên thế giới. MERS có thể lây từ người sang người, đặc biệt tại vùng dịch, trong môi trường bệnh viện và các cơ sở chăm sóc sức khỏe khác.</p>
+                </section>
+                <br>
+                <section class="small-title">
+                    <h2>1. Bệnh MERS xuất hiện khi nào?</h2>
+
+                    <p class="p-content p-content-sm">
+                        Tính từ tháng 6 năm 2012 tới 30 tháng 6 năm 2019, đã có 2449 trường hợp được xác định dương tính với virus MERS-CoV gây hội chứng hô hấp Trung Đông. Trong đó, có tới 84% các trường hợp được ghi nhận tại <a class="map" href="https://goo.gl/maps/NLmoywyMnfXyosij9"><img
+                            src="img/icons8-google-maps-20.png" height="20" width="20"/> Ả rập Xê-út</a>. MERS-CoV đã lây lan ra 27 quốc gia thuộc khu vực Trung Đông, Bắc Phi, Châu Âu, Châu Á và Mỹ. Tới thời điểm báo cáo tháng 1 năm 2019, trên toàn thế giới đã có tổng số 845 ca tử vong do MERS, chiếm 34,5% số ca nhiễm bệnh.
+
+                    </p>
+                </section>
+                <section class="small-title">
+                    <h2>2. Đặc tính virus, nguồn gốc, độc lực</h2>
+                    <p class="p-content p-content-sm">
+                        Virus MERS-CoV, thuộc họ Coronaviridae, có khả năng lây nhiễm và gây bệnh cho người, động vật có vú và một số loài chim. Virus gây dịch MERS được xác định là chủng coronavirus mới có khả năng gây bệnh viêm đường hô hấp cấp tiến triển nhanh chóng trên người, đặc biệt ở người già và trẻ nhỏ, những người có thể trạng yếu hoặc đang mắc các bệnh mãn tính khác. MERS-CoV được xác định là khác tất cả các chủng coronavirus đã được tìm thấy ở người, và cũng khác so với chủng SARS-CoV gây dịch SARS năm 2002-2003. Tuy nhiên, tương tự như SARS-CoV, MERS-CoV cũng có nguồn gốc từ dơi lây nhiễm sang người qua động vật trung gian là lạc đà.
+                    </p>
+                    <figure>
+                        <p class="img"><img src="img/MERS.png" height="369" width="512"/></p> <figcaption>Coronavirus gây bệnh MERS với các protein hình vương miện trên bề mặt</figcaption>
+                    </figure>
+                </section>
+                <section class="small-title">
+                    <h2>3. Các triệu trứng được ghi nhận</h2>
+                    <p class="p-content p-content-sm">Rất nhiều trường hợp được xác định dương tính với MERS-CoV đã tiến triển nhanh thành các bệnh đường hô hấp nghiêm trọng, đặc biệt gây viêm phổi nặng. Các triệu chứng gồm có sốt, ho và khó thở. Ngoài ra cũng có thể có nhiều triệu trứng đã được báo ở một vài trường hợp gồm đau và nhức mỏi cơ, tiêu chảy, nôn mửa.</p>
+                    <p class="p-content p-content-sm">Ghi nhận một số trường hợp được xác định dương tính, tuy nhiên không có biểu hiện triệu chứng của bệnh do MERS-CoV hoặc chỉ biểu hiện triệu chứng ở mức độ nhẹ. Các trường hợp này đã được chỉ định kiểm tra do có tiếp xúc gần với các trường hợp bệnh nặng.</p>
+                </section>
+                <section class="small-title">
+                    <h2>4. Đường lây truyền</h2>
+                    <p class="p-content p-content-sm">Đã có các bằng chứng cho thấy, MERS-CoV có nguồn gốc ban đầu từ dơi, đã lây nhiễm sang người thông qua lạc đà. Một nhóm các nhà nghiên cứu đa quốc gia gồm Đức, Anh, Nga và Ả rập Xê-út đã tìm thấy MERS-CoV tồn tại ở gần 23% nhóm lạc đà nghiên cứu tại Ả rập Xê-út, cho thấy tỉ lệ xuất hiện virus cao và nguy cơ cao đối với những người chăm sóc lạc đà. Nhóm nghiên cứu cũng tìm ra rằng, MERS-CoV xuất hiện nhiều hơn ở nhóm lạc đà có nguồn gốc nội địa Ả rập Xê-út, so với nhóm lạc đà có nguồn gốc nhập khẩu từ châu Phi (Azhar 2014; El-Kafrawy 2019).</p>
+                    <p class="p-content p-content-sm">Do vậy, WHO đã đưa ra khuyến cáo về việc lây nhiễm MERS-CoV từ lạc đà sang người ở bán đảo Ả rập với nguy cơ lây nhiễm từ người sang người, chủ yếu trong bệnh viện hoặc cơ sở y tế khác, chủ yếu ở Ả rập Xê-út vẫn tiếp tục diễn ra. Ngoài ra, tồn tại nguy cơ lây lan ra cộng đồng thông qua các hoạt động thông thương, du lịch giữa các nước trong khu vực và trên thế giới. Chưa có bằng chứng rõ ràng cho việc virus có thể lây nhiễm từ người bị nhiễm nhưng chưa có biểu hiện bệnh sang cho người lành.</p>
+                    <figure>
+                        <p class="img"><img src="img/lạcđà.png" height="369" width="512"/></p> <figcaption>Lạc đà, động vật trung gian truyền MERS-CoV sang người</figcaption>
+                    </figure>
+                </section>
+                <section class="small-title">
+                    <h2>5. Chẩn đoán và điều trị</h2>
+                    <p class="p-content p-content-sm"><strong>Chẩn đoán qua triệu chứng lâm sàng (theo hướng dẫn của Bộ Y tế):</strong></p>
+                    <ul>
+                        <li class="nd">Triệu chứng khởi phát thường gặp là sốt, ho, ớn lạnh đau họng, đau cơ, nhức mỏi xương khớp. Sau đó bệnh nhân xuất hiện khó thở và tiến triển nhanh tới viêm phổi.</li>
+                        <li class="nd">Khoảng 1/3 số bệnh nhân có các triệu chứng tiêu hóa như nôn và tiêu chảy.</li>
+                        <li class="nd">Một nửa số bệnh nhân tiến triển nhanh thành viêm phổi và 10% sẽ tiến triển thành hội chứng <strong>suy hô hấp cấp tính (ARDS).</strong></li>
+                        <li class="nd">Kết quả chụp X-quang ngực có hình ảnh phù hợp với viêm phổi do virus và ARDS.</li>
+                        <li class="nd">Xét nghiệm công thức máu thường thấy giảm bạch cầu, đặc biệt là giảm bạch cầu lympho.</li>
+                    </ul>
+                    <p class="p-content p-content-sm"><strong>Ca bệnh nghi ngờ:</strong></p>
+                    <ul>
+                        <li class="nd">Di chuyển tới vùng dịch tễ hoặc sống trong vùng dịch tễ có người mắc MERS-CoV khoảng 10 ngày trước khi xuất hiện triệu chứng.</li>
+                        <li class="nd">Có tiếp xúc gần với những ca bệnh xác định/có thể.</li>
+                        <li class="nd">Bệnh nhân có biểu hiện nhiễm trùng đường hô cấp cấp, gồm sốt trên 38 độ C, ho, khó thở, có tổn thương nhu mô phổi, viêm phổi hoặc hội chứng suy hô hấp cấp tiến triển (ARDS) dựa trên lâm sàng hoặc hình ảnh chụp X-quang.
+                        </li>
+                        <li class="nd">Không lý giải được bằng các bệnh nhiễm trùng hoặc căn nguyên khác, bao gồm tất cả các trường hợp có chỉ định xét nghiệm để chẩn đoán viêm phổi cộng đồng.</li>
+                    </ul>
+                    <p class="p-content p-content-sm"><strong>Ca bệnh có thể:</strong></p>
+                    <ul>
+                        <li class="nd">Người tiếp xúc trực tiếp với ca bệnh đã được chẩn đoán xác định bằng xét nghiệm, bao gồm những người chăm sóc bệnh nhân; nhân viên y tế hoặc các thành viên trong gia đình; những người sống chung với bệnh nhân hoặc đến thăm bệnh nhân trong thời gian có biểu hiện bệnh.</li>
+                        <li class="nd">Bệnh nhân có các dấu hiệu lâm sàng, XQ hoặc xét nghiệm giải phẫu bệnh của bệnh lý nhu mô phổi (ví dụ như viêm phổi hoặc ARDS) phù hợp với định nghĩa về ca bệnh ở trên, nhưng không được khẳng định bằng xét nghiệm bởi vì: không lấy được mẫu bệnh phẩm, hoặc không làm được xét nghiệm để chẩn đoán căn nguyên nhiễm trùng hô hấp khác.</li>
+                        <li class="nd">Không lý giải được do các nhiễm trùng khác hoặc căn nguyên khác.</li>
+                    </ul>
+                    <p class="p-content p-content-sm"><strong>Ca bệnh xác định:</strong></p>
+                    <ul>
+                        <li class="nd">Là ca bệnh có biểu hiện lâm sàng như đã nêu trên và được khẳng định bằng xét nghiệm PCR dương tính với <strong>virus corona</strong> mới.</li>
+                        <li class="nd">Kỹ thuật xác định <strong>Virus Corona</strong> là kỹ thuật Real time RT – PCR với bệnh phẩm là dịch đường hô hấp, đờm, dịch nội khí quản được lấy theo đúng quy trình và bảo quản trong môi trường phù hợp. Lưu ý: Đối với các trường hợp đầu tiên nghi nhiễm vi rút corona mới, các đơn vị cần lưu mẫu và chuyển mẫu đến các cơ sở xét nghiệm được Bộ Y tế cho phép khẳng định.</li>
+                    </ul>
+                    <p class="p-content p-content-sm"><strong>Chẩn đoán phân biệt:</strong></p>
+                    <p class="p-content p-content-sm">Bệnh cảnh lâm sàng do Mers-CoV gây ra gồm nhiều triệu chứng khác nhau, nhưng chủ yếu là suy hô hấp cấp và suy thận cấp, vì vậy cần phải phân biệt với các trường hợp sau:</p>
+                    <ul>
+                        <li class="nd">Cúm nặng (cúm A/H1N1 hoặc A/H5N1.....).</li>
+                        <li class="nd">Viêm phổi không điển hình.</li>
+                        <li class="nd">Nhiễm trùng huyết gây suy thận và suy hô hấp.</li>
+                    </ul>
+                    <p class="p-content p-content-sm"><strong>Điều trị</strong></p>
+                    <p class="p-content p-content-sm">Với các ca bệnh nghi ngờ hoặc có thể đều phải được khám tại bệnh viện, được làm xét nghiệm đặc hiệu để chẩn đoán xác định nguy cơ lây nhiễm MERS-CoV. Với các ca bệnh đã xác định nhiễm MERS-CoV, cần phải nhập viện theo dõi và cách ly hoàn toàn. Chưa có thuốc điều trị đặc hiệu, vì vậy chủ yếu chỉ điều trị triệu chứng, phát hiện và xử lý kịp thời tình trạng suy hô hấp, suy thận.</p>
+                </section>
+                <br>
+
+            </div>
+        </div>
+
+    </article>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <span class="home_trademark">Vertex</span>
+                <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt=""> &nbsp; 24/7 support</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                    </li>
+                </ul>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <span class="home_trademark">Virus dictionary for phones</span>
+                <div class="footer-apps">
+                    <img class="img-qr-code" src="./img/qrcode.png" alt="">
+                    <ul class="app-list">
+                        <li class="app-list-item">
+                            <img src="./img/app_store.png" alt="">
+                        </li>
+                        <li class="app-list-item">
+                            <img src="./img/google_play.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <span class="home_trademark">Information</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <span class="home_trademark">Contact</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span class="home_trademark">Where to find us?</span>
+                <p class="footer-map-icon">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England
+                </p>
+
+                <div class="footer-map">
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4" allowfullscreen="" title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/select2.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#states").select2();
+    });
+</script>
+
+
+
+</body>
+</html>

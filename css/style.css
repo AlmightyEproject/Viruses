@@ -11,6 +11,17 @@ div.share{
     flex-direction: row;
     flex-wrap: wrap;
 }
+img{
+    border-radius: 8px;
+}
+div.card-content{
+    overflow: auto;
+    height: 500px;
+}
+a.map{
+    text-decoration: none;
+    font-weight: 600;
+}
 p.share-label{
     font-size: 16px;
     color: #000;
@@ -24,9 +35,9 @@ p.share-label{
     background-color: #cbecff;
 }
 p.head{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
 }
 figcaption{
     font-size: 12px;
