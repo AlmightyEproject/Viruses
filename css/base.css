@@ -50,10 +50,8 @@ html:not(.no-js)  [data-aos=fade-right]{
     -webkit-transform: translate3d(-20px,0,0);
     transform: translate3d(-20px,0,0);
 }
-/* @media (min-width: 1400px)
-{
-    body  .container{
-    max-width: 1140px;
-}
 
-} */
+@keyframes show-width {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
