@@ -10,4 +10,8 @@ $(document).ready(function(){
         $(this).children('span').children('svg').toggleClass('d-none')
     })
 
+    $(".box1").hover(function(){
+       $(this).find('i').toggleClass('fa-envelope fa-envelope-open')
+    })
+
 })

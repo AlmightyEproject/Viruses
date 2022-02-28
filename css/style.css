@@ -894,7 +894,25 @@ li.nd{
 .info-member p{
     margin-top: 12px;
 }
-
+.info-vertex{
+    top: 0;
+}
+.box-bg-vertex svg{
+    width: 100%;
+}
+.info-member hr{
+    height: 2px;
+    color: #53c1ec;
+}
+.row-member{
+    margin-top: 60px;
+}
+.About-us-title{
+    margin-top: 40px;
+    text-align: center;
+    color: #018cca;
+}
+  
 /* footer */
 .footer {
     background-color: #e6f2f9;
