@@ -11,6 +11,9 @@ div.share{
     flex-direction: row;
     flex-wrap: wrap;
 }
+div.head-img{
+    float: right;
+}
 img{
     border-radius: 8px;
 }
@@ -35,7 +38,7 @@ p.share-label{
     background-color: #cbecff;
 }
 p.head{
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     font-weight: 200;
 }
