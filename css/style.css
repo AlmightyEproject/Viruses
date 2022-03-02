@@ -11,6 +11,9 @@ div.share{
     flex-direction: row;
     flex-wrap: wrap;
 }
+div.head-img{
+    float: right;
+}
 img{
     border-radius: 8px;
 }
@@ -35,7 +38,7 @@ p.share-label{
     background-color: #cbecff;
 }
 p.head{
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     font-weight: 200;
 }
@@ -127,7 +130,7 @@ li.nd{
 }
 .col-left{
     flex: 0 0 auto;
-    min-width: 240px;
+    width: 200px;
 }
 .col-right{
     flex: 1;
@@ -259,16 +262,11 @@ li.nd{
     margin-top: 24px;
 }
 .body .blog-list {
-    background-color: #53c1ec;
-    border-radius: 8px;
-
     padding-top: 12px;
     padding-bottom: 12px;
-
     padding-left: 0;
     padding-right: 0;
     height: auto;
-    margin-top: 70px;
 }
 .blog-row {
     display: flex;
@@ -355,6 +353,7 @@ li.nd{
     list-style: none;
 }
 .menu-left {
+    min-width: 192px;
     padding-right: 4px;
     position: sticky;
     left: 0;
@@ -469,14 +468,12 @@ li.nd{
     z-index: 10;
 }
 /* Blog */
-.container-blog {
-    margin-top: 40px;
-}
+
 .blog-card {
     display: flex;
-    margin-bottom: 60px;
+    margin-top: 24px;
     background-color: #f4f9f8;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 16px;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 0px 16px;
 }
 .blog-card:hover {
     position: relative;
@@ -521,6 +518,7 @@ li.nd{
 .blog-tag {
     background-color: rgb(150, 216, 247);
     padding: 12px 0;
+    margin-bottom: 24px;
 }
 .tag-title {
     margin-bottom: 12px;
@@ -528,6 +526,7 @@ li.nd{
     color: black;
 }
 .tag-row {
+    border-radius: 4px;
     text-decoration: none;
     background-color: #53c1ec;
     padding: 4px 4px;
@@ -574,16 +573,15 @@ li.nd{
 .profile-content span {
     display: block;
 }
-.user-nationality svg {
-    width: 40px;
-    height: auto;
+.user-out  i {
+    font-size: 20px;
 }
 .user-nickname {
     font-size: 28px;
     font-weight: 600;
 }
 .user-more span {
-    line-height: 28px;
+    line-height: 32px;
 }
 .user-more span i {
     margin-right: 8px;
@@ -614,7 +612,9 @@ li.nd{
 .item-history {
     padding: 12px 12px;
 }
-
+.blog-card{
+  
+}
 .item-history .blog-card{
     margin: 0;
     position: static;
@@ -1002,11 +1002,98 @@ li.nd{
 .fa-instagram {
     color: #d6249f;
 }
+/* Login */
+.overlay-login{
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+.box-form-login{
+    position: relative;
+    top: 90px;
+    opacity: 0;
+    padding: 0;
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+.login{
+    padding: 40px 40px;
+    border-radius: 20px 0 0 20px;
+    background-color: #fff;
+}
 
-
-
-
-
+#formlogin input{
+    height: 40px;
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+#formlogin button{
+    width: 100%;
+    margin-top: 24px;
+    outline: none;
+    border-radius: 4px;
+    background: #1da1f2;
+    padding: 8px 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.more-login p{
+    margin-top: 40px;
+}
+.social-items{
+    list-style: none;
+    display: flex;
+}
+.social-item img{
+    width: 40px;
+    margin-right:  16px;
+}
+.social-items{
+    padding: 0;
+}
+.fix-logo{
+    transform: translateY(-4px);
+}
+.form-bg-right{
+    background-color: #1da1f2;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+.form-bg-right{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-bg-right img{
+    width: 120px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.btn-close{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 1;
+}
 
 /*
 Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
