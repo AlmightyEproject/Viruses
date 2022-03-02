@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Vertex.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <title>Home</title>
+</head>
+<body>
+<header class="header">
+    <!-- <div class="body-background-color">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+            <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+          </svg>
+    </div> -->
+    <div class="container">
+        <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid nav-header p-0">
+                <a class="homelogo" href="#">
+                    <img  src="./img/Vertex.jpg" alt="">
+                    <span class="home_trademark">Vertex</span>
+                </a>
+                <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                        <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Virus</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Statistic</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">About</a>
+                        </li>
+
+                        <li class="navbar-item home-navbar-item">
+                            <a class="menu-nav-link" aria-current="page" href="#">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<nav class="container-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="form-search">
+                    <input type="text" placeholder="Search..">
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="box-dropdown">
+                    <div class="dropdown-option-list d-lg-none">
+                        <button class="btn btn-bd-light" id="btn-option-list">
+                            <span class="d-lg-inline">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+                                <title>Expand</title>
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                                </svg>
+
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse d-none" fill="currentColor" viewBox="0 0 16 16">
+                                    <title>Collapse</title>
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                                  </svg>
+
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown dropdown-language">
+                        <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            <span class="d-none d-lg-inline">English</span> v5.1
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                            <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div class="body container">
+    <article class="header-title">
+        <div class="row">
+            <div class=" col-12 col-left col-lg-2 ">
+                <div class="menu-left">
+                    <ul class="menu-option-list">
+                        <select style="width:100%" id="states">
+                            <optgroup label="A">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="B">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="C">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="D">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="E">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tìm kiếm Virus</button>
+
+
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                            </ul>
+                        </li>
+                        <ul class="menu-sub">
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                            <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                        </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Tổng quan về Virus</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Dòng lịch sử về virus</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Nguồn gốc</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đặc điểm sinh học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phân loại</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Virus ở người</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Ứng Dụng</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Khoa học y học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Khoa học vật liệu</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Virus nhân tạo</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Vũ khí sinh học</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Vai trò</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Lây nhiễm</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-12 col-right  col-lg-10 ">
+                <section class="small-title">
+                    <h2>Hepatitis B</h2>
+
+                </section>
+
+                <section class="small-title">
+                    <h3>Overview</h3>
+
+                    <p class="p-content p-content-sm">
+                        Hepatitis E is inflammation of the liver caused by the hepatitis E virus (HEV). The virus has at least 4 different types: genotypes 1, 2, 3 and 4. Genotypes 1 and 2 have been found only in humans. Genotypes 3 and 4 circulate in several animals including pigs, wild boars and deer without causing any disease, and occasionally infect humans.
+                        <br><br>
+                        A safe and effective vaccine that offers 98% to 100% protection against hepatitis B is available. Preventing hepatitis B infection averts the development of complications including chronic disease and liver cancer.
+                        <br><br>
+                        The virus is shed in the stools of infected persons and enters the human body through the intestine. It is transmitted mainly through contaminated drinking water. The infection is usually self-limiting and resolves within 2–6 weeks. Occasionally a serious disease known as fulminant hepatitis (acute liver failure) develops, which can be fatal.
+                        <br><br>
+                    </p>
+
+                </section>
+
+                <section class="small-title">
+                    <figure>
+                        <p class="p-img"><img src="img/viemganB.jpg" /></p>
+
+                </section>
+                <section class="small-title">
+                    <h3>Transmission</h3>
+                    <p class="p-content p-content-sm">
+                        In highly endemic areas, hepatitis B is most commonly spread from mother to child at birth (perinatal transmission) or through horizontal transmission (exposure to infected blood), especially from an infected child to an uninfected child during the first 5 years of life. The development of chronic infection is common in infants infected from their mothers or before the age of 5 years.
+
+                        <br>
+                        <br>
+                        Hepatitis B is also spread by needlestick injury, tattooing, piercing and exposure to infected blood and body fluids, such as saliva and menstrual, vaginal and seminal fluids. Transmission of the virus may also occur through the reuse of contaminated needles and syringes or sharp objects either in health care settings, in the community or among persons who inject drugs. Sexual transmission is more prevalent in unvaccinated persons with multiple sexual partners
+
+                        <br>
+                        <br>
+                        Hepatitis B infection acquired in adulthood leads to chronic hepatitis in less than 5% of cases, whereas infection in infancy and early childhood leads to chronic hepatitis in about 95% of cases. This is the basis for strengthening and prioritizing infant and childhood vaccination.
+                        <br>
+                        <br>
+                        The hepatitis B virus can survive outside the body for at least 7 days. During this time, the virus can still cause infection if it enters the body of a person who is not protected by the vaccine. The incubation period of the hepatitis B virus ranges from 30 to 180 days. The virus may be detected within 30 to 60 days after infection and can persist and develop into chronic hepatitis B, especially when transmitted in infancy or childhood.
+
+
+                    <figure>
+                        <p class="p-img"><img src="img/Hepatitis-B-4.jpg" /></p>
+                    </figure>
+
+                    </p>
+
+                </section>
+                <section class="small-title">
+                    <h3>Symptoms</h3>
+                    <p class="p-content p-content-sm">
+                        Most people do not experience any symptoms when newly infected. However, some people have acute illness with symptoms that last several weeks, including yellowing of the skin and eyes (jaundice), dark urine, extreme fatigue, nausea, vomiting and abdominal pain. People with acute hepatitis can develop acute liver failure, which can lead to death. Among the long-term complications of HBV infections, a  subset of persons develops advanced liver diseases such as cirrhosis and hepatocellular carcinoma, which cause high morbidity and mortality.
+
+                    </p>
+
+                </section>
+                <section class="small-title">
+                    <h3>HBV-HIV coinfection</h3>
+                    <p class="p-content p-content-sm">
+                        About 1% of persons living with HBV infection (2.7 million people) are also infected with HIV. Conversely, the global prevalence of HBV infection in HIV-infected persons is 7.4%. Since 2015, WHO has recommended treatment for everyone diagnosed with HIV infection, regardless of the stage of disease. Tenofovir, which is included in the treatment combinations recommended as first-line therapy for HIV infection, is also active against HBV
+
+                    </p>
+
+                </section>
+                <section class="small-title">
+                    <h3>Treatment</h3>
+                    <p class="p-content p-content-sm">
+                        There is no specific treatment for acute hepatitis B. Therefore, care is aimed at maintaining comfort and adequate nutritional balance, including replacement of fluids lost from vomiting and diarrhoea. Most important is the avoidance of unnecessary medications. Acetaminophen, paracetamol and medication against vomiting should be avoided.
+                        <br><br>
+                        Chronic hepatitis B infection can be treated with medicines, including oral antiviral agents. Treatment can slow the progression of cirrhosis, reduce incidence of liver cancer and improve long term survival. In 2021 WHO estimated that 12% to 25% of people with chronic hepatitis B infection will require treatment, depending on setting and eligibility criteria.
+                        <br><br>
+                        WHO recommends the use of oral treatments (tenofovir or entecavir) as the most potent drugs to suppress hepatitis B virus. Most people who start hepatitis B treatment must continue it for life.
+                        <br><br>
+                        In low-income settings, most people with liver cancer die within months of diagnosis. In high-income countries, patient present to hospital earlier in the course of the disease, and have access to surgery and chemotherapy which can prolong life for several months to a few years. Liver transplantation is sometimes used in people with cirrhosis or liver cancer in high-income countries, with varying success
+                        <br><br>
+                    </p>
+
+                </section>
+                <section class="small-title">
+                    <h3>Prevention</h3>
+                    <p class="p-content p-content-sm">
+                        WHO recommends that all infants receive the hepatitis B vaccine as soon as possible after birth, preferably within 24 hours, followed by 2 or 3 doses of hepatitis B vaccine at least 4 weeks apart to complete the vaccination series. Protection lasts at least 20 years and is probably lifelong. WHO does not recommend booster vaccinations for persons who have completed the 3-dose vaccination schedule.
+                        <br><br>
+                        In addition to infant vaccination, WHO recommends the use of antiviral prophylaxis for the prevention of hepatitis B transmission from mother-to-child. Implementation of blood safety strategies and safer sex practices, including minimizing the number of partners and using barrier protective measures (condoms), also protect against transmission.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+        </div>
+
+
+    </article>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <div>
+                    <div>
+                        <span class="home_trademark">Vertex</span>
+                        <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt=""> &nbsp; 24/7 support</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                            </li>
+                        </ul>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <span class="home_trademark">Virus dictionary for phones</span>
+                        <div class="footer-apps">
+                            <img class="img-qr-code" src="./img/qrcode.png" alt="">
+                            <ul class="app-list">
+                                <li class="app-list-item">
+                                    <img src="./img/app_store.png" alt="">
+                                </li>
+                                <li class="app-list-item">
+                                    <img src="./img/google_play.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-3 col-lg-2">
+                <span class="home_trademark">Information</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-lg-2">
+                <span class="home_trademark">Contact</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+                <span class="home_trademark">Where to find us?</span>
+                <p class="footer-map-icon">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England
+                </p>
+
+                <div class="footer-map">
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4" allowfullscreen="" title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/select2.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#states").select2();
+    });
+</script>
+
+
+
+</body>
+</html>
