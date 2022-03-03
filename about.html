@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./css/base.css" />
         <title>Home</title>
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         <header class="header">
             <!-- <div class="body-background-color">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
@@ -105,8 +105,8 @@
 
         <div class="container">
             <h2 class="About-us-title" data-aos="zoom-in">About Us</h2>
-            <div class="row row-member">
-                <div class="col-6">
+            <div class="row row-member" data-aos-easing="ease-in-out">
+                <div class="col-lg-6 order-2 order-lg-1">
                     <div class="info-member info-vertex" data-aos="fade-right">
                         <h3 data-aos="fade-down">Vertex</h3>
                         <span class="position">Nonprofit</span>
@@ -116,7 +116,7 @@
                         <hr data-aos="zoom-in">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-1 order-lg-2">
                     <div class="box-bg-vertex" data-aos="fade-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="375" viewBox="0 0 375 375" height="375" version="1.0">
                             <path
@@ -264,12 +264,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-member">
-                <div class="col-6">
+            <div class="row row-member" data-aos-easing="ease-in-out">
+                <div class="col-lg-6">
                     <div class="box-bg-info">
                         <div data-aos="fade-down">
                             <div class="pic">
-                                <img src="" alt="" />
+                                <img 
+                                src="./img/QV.jpg" alt=""
+                                style="transform: translate(-108px, -182px) rotate(-45deg); width: 430px;"/>
                             </div>
                         </div>
 
@@ -305,7 +307,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="info-member" data-aos="fade-left">
                         <h3 data-aos="fade-down">Quy Vu</h3>
                         <span class="position">Leader</span>
@@ -315,8 +317,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-member">
-                <div class="col-6">
+            <div class="row row-member" data-aos-easing="ease-in-out">
+                <div class="col-lg-6 order-2 order-lg-1">
                     <div class="info-member" data-aos="fade-right">
                         <h3 data-aos="fade-down">Dac Dung</h3>
                         <span class="position">Member</span>
@@ -325,11 +327,13 @@
                         <hr data-aos="zoom-in">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-1 order-lg-2">
                     <div class="box-bg-info">
                         <div data-aos="fade-down">
                             <div class="pic">
-                                <img src="" alt="" />
+                                <img 
+                                src="./img/Dl.jpg" alt=""
+                                style="transform: translate(-108px, -182px) rotate(-45deg); width: 430px;"/>
                             </div>
                         </div>
 
@@ -365,12 +369,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-member">
-                <div class="col-6">
+            <div class="row row-member" data-aos-easing="ease-in-out">
+                <div class="col-lg-6">
                     <div class="box-bg-info">
                         <div data-aos="fade-down">
                             <div class="pic">
-                                <img src="" alt="" />
+                                <img 
+                                src="./img/Dl.jpg" alt=""
+                                style="transform: translate(-108px, -182px) rotate(-45deg); width: 430px;"/>
                             </div>
                         </div>
 
@@ -406,7 +412,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="info-member" data-aos="fade-left">
                         <h3 data-aos="fade-down">Duy Linh</h3>
                         <span class="position">Member</span>
@@ -550,7 +556,7 @@
                 duration: 1000,
                 once: false,
                 mirror: false,
-                offset: 20,
+                offset: -50,
                 delay: 0,
             });
         </script>

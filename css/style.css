@@ -769,6 +769,7 @@ li.nd{
 
 /* About */
 .box-bg-info{
+    width: 530px;
     position: relative;
     bottom: 10px;
     margin-bottom: 180px;
@@ -793,8 +794,8 @@ li.nd{
     transform: rotate(-45deg);
 }
 .pic img:hover{
-    width: 150%;
-    transition: all 0.5s ease-in-out;
+    zoom: 1.1;
+    transition: all 2s ease-in-out;
 }
 .box{
     cursor: pointer;
@@ -909,8 +910,7 @@ li.nd{
     font-size: 42px;
 }
 .info-member{
-    position: relative;
-    top: 108px;
+   margin-top: 108px;
 }
 .info-member h3{
     margin-bottom: 12px;
@@ -919,7 +919,7 @@ li.nd{
     margin-top: 12px;
 }
 .info-vertex{
-    top: 0;
+    margin: 0;
 }
 .box-bg-vertex svg{
     width: 100%;
