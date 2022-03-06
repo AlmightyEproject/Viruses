@@ -122,15 +122,17 @@ li.nd{
 }
 
 .header-title {
+    position: relative;
     margin: 0;
     color: #018cca;
     font-size: 36px;
     font-weight: 600;
     line-height: 70px;
 }
+
 .col-left{
     flex: 0 0 auto;
-    min-width: 240px;
+    width: 200px;
 }
 .col-right{
     flex: 1;
@@ -234,6 +236,7 @@ li.nd{
     margin-bottom: 48px;
 }
 #form-sub {
+    max-width: 100%;
     width: 560px;
     margin: 0 auto;
     position: relative;
@@ -262,16 +265,11 @@ li.nd{
     margin-top: 24px;
 }
 .body .blog-list {
-    background-color: #53c1ec;
-    border-radius: 8px;
-
     padding-top: 12px;
     padding-bottom: 12px;
-
     padding-left: 0;
     padding-right: 0;
     height: auto;
-    margin-top: 70px;
 }
 .blog-row {
     display: flex;
@@ -334,10 +332,15 @@ li.nd{
     width: 100%;
 }
 .menu-option-list {
+    margin: 0;
     padding: 0;
     font-size: 16px;
     justify-content: space-around;
     list-style: none;
+}
+.menu-option-list hr{
+ margin: 0;
+ color: #000;
 }
 .menu-right .menu-option-list {
     line-height: 36px;
@@ -358,6 +361,8 @@ li.nd{
     list-style: none;
 }
 .menu-left {
+    background-color: #f4f9f8;
+    min-width: 192px;
     padding-right: 4px;
     position: sticky;
     left: 0;
@@ -428,6 +433,21 @@ li.nd{
 .turn-down {
     transform: rotate(90deg);
 }
+#bd-versions{
+    display: flex;
+    align-items: center;
+}
+.img-flag-lang{
+    border-radius: 2px;
+    margin: 0 4px;
+    width: 27px;
+    height: 14px;
+}
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* test input */
 #form-search input[type="text"] {
@@ -443,6 +463,20 @@ li.nd{
 
 #form-search {
     margin: 0px 0;
+}
+.drop-down-search{
+    position: absolute;
+    width: 480px;
+    max-width: 100%;
+    padding-right: 24px;
+    margin-top: 2px;
+}
+.drop-down-search ul{
+    border-radius: 4px;
+    background: red;
+    list-style: none;
+    padding-left: 12px;
+  
 }
 .box-dropdown{
     display: flex;
@@ -472,14 +506,12 @@ li.nd{
     z-index: 10;
 }
 /* Blog */
-.container-blog {
-    margin-top: 40px;
-}
+
 .blog-card {
     display: flex;
-    margin-bottom: 60px;
+    margin-top: 24px;
     background-color: #f4f9f8;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 16px;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 0px 16px;
 }
 .blog-card:hover {
     position: relative;
@@ -524,6 +556,7 @@ li.nd{
 .blog-tag {
     background-color: rgb(150, 216, 247);
     padding: 12px 0;
+    margin-bottom: 24px;
 }
 .tag-title {
     margin-bottom: 12px;
@@ -531,6 +564,7 @@ li.nd{
     color: black;
 }
 .tag-row {
+    border-radius: 4px;
     text-decoration: none;
     background-color: #53c1ec;
     padding: 4px 4px;
@@ -540,8 +574,8 @@ li.nd{
 }
 /* blog-new */
 .blog-author img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     margin-right: 8px;
     border-radius: 4px;
 }
@@ -563,13 +597,35 @@ li.nd{
     justify-content: space-between;
     display: flex;
 }
+.profile-user-box{
+    display: flex;
+}
+.profile-user-img  {
+    position: relative;
+}
 .profile-user-img img {
     width: 180px;
     height: 180px;
     border-radius: 100%;
 }
+.btn-edit-profile{
+    border: solid 2px #fff;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #1da1f2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.btn-edit-profile i{
+    margin: 0 auto;
+}
 .profile-content {
-    margin-left: 28px;
+    margin-left: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -577,26 +633,21 @@ li.nd{
 .profile-content span {
     display: block;
 }
-.user-nationality svg {
-    width: 40px;
-    height: auto;
+.user-out  i {
+    font-size: 20px;
 }
 .user-nickname {
     font-size: 28px;
     font-weight: 600;
 }
 .user-more span {
-    line-height: 28px;
+    line-height: 32px;
 }
 .user-more span i {
     margin-right: 8px;
     font-size: 20px;
 }
 
-.profile-edit {
-    top: 20px;
-    position: relative;
-}
 .profile-edit-link {
     background-color: #53c1ec;
     padding: 8px 16px;
@@ -617,7 +668,9 @@ li.nd{
 .item-history {
     padding: 12px 12px;
 }
-
+.blog-card{
+    
+}
 .item-history .blog-card{
     margin: 0;
     position: static;
@@ -745,6 +798,7 @@ li.nd{
 
 /* About */
 .box-bg-info{
+    width: 530px;
     position: relative;
     bottom: 10px;
     margin-bottom: 180px;
@@ -763,15 +817,14 @@ li.nd{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .pic img{
     cursor: pointer;
-    width: 120%;
+    width: 430px;
+    min-width: 430px;
     transform: rotate(-45deg);
 }
-.pic img:hover{
-    width: 150%;
-    transition: all 0.5s ease-in-out;
-}
+
 .box{
     cursor: pointer;
     border-radius: 4px;
@@ -885,8 +938,7 @@ li.nd{
     font-size: 42px;
 }
 .info-member{
-    position: relative;
-    top: 108px;
+   margin-top: 108px;
 }
 .info-member h3{
     margin-bottom: 12px;
@@ -895,7 +947,7 @@ li.nd{
     margin-top: 12px;
 }
 .info-vertex{
-    top: 0;
+    margin: 0;
 }
 .box-bg-vertex svg{
     width: 100%;
@@ -911,6 +963,71 @@ li.nd{
     margin-top: 40px;
     text-align: center;
     color: #018cca;
+}
+.contact-social-network{
+    margin-bottom: 20px;
+}
+
+.contact-social-network i{
+    font-size: 40px;
+    margin-right: 40px;
+}
+
+/* Contact */
+.row-contact{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contact-item{
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: #eee;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.contact-item p{
+    margin: 0;
+}
+.contact-item i{
+    margin-right: 12px;
+    font-size: 24px;
+}
+#form-contact input{
+    padding-left: 12px;
+    border-radius: 8px;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+    border: 1px solid #018cca;
+    outline: none;
+}
+#form-contact textarea{
+    padding-top: 8px;
+    line-height: 20px;
+    padding-left: 12px;
+    border-radius: 8px;
+    width: 100%;
+    height: 118px;
+    margin-bottom: 12px;
+    border: 1px solid #018cca;
+    outline: none; 
+}
+#send-message{
+    font-weight: 600;
+    padding: 0 8px;
+    border-radius: 8px;
+    height: 36.6px;
+    background-color: #53c1ec;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+#send-message i{
+    margin-right: 12px;
+    font-size: 24px;
+    transform: rotate(20deg);
 }
   
 /* footer */
@@ -1005,11 +1122,98 @@ li.nd{
 .fa-instagram {
     color: #d6249f;
 }
+/* Login */
+.overlay-login{
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+.box-form-login{
+    position: relative;
+    top: 90px;
+    opacity: 0;
+    padding: 0;
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+.login{
+    padding: 40px 40px;
+    border-radius: 20px 0 0 20px;
+    background-color: #fff;
+}
 
-
-
-
-
+#formlogin input{
+    height: 40px;
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+#formlogin button{
+    width: 100%;
+    margin-top: 24px;
+    outline: none;
+    border-radius: 4px;
+    background: #1da1f2;
+    padding: 8px 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.more-login p{
+    margin-top: 40px;
+}
+.social-items{
+    list-style: none;
+    display: flex;
+}
+.social-item img{
+    width: 40px;
+    margin-right:  16px;
+}
+.social-items{
+    padding: 0;
+}
+.fix-logo{
+    transform: translateY(-4px);
+}
+.form-bg-right{
+    background-color: #1da1f2;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+.form-bg-right{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-bg-right img{
+    width: 120px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.btn-close{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 1;
+}
 
 /*
 Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
