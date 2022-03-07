@@ -1031,7 +1031,58 @@ li.nd{
     font-size: 24px;
     transform: rotate(20deg);
 }
-  
+/* Viết blog */
+#blog{
+    width: 100%;
+    outline: none;
+    padding: 4px 8px;
+}
+.option-bar{
+    padding-left: 24px;
+    margin: 20px 0;
+}
+.option-bar-item{
+    position: relative;
+    margin-right: 24px;
+    padding: 2px;
+    cursor: pointer;
+}
+.content-text{
+    border: 1px solid ;
+    height: calc( 100% - 7px );
+    padding: 4px 8px;
+}
+.option-heading{
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px );
+}
+.header-list{
+    list-style: none;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+}
+.header-list li{
+    padding: 0 24px;
+}
+.header-list li *{
+    margin-bottom: 0;
+}
+.header-list li:hover{
+    background-color: #e3f4f7;
+}
+#option-heading::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50px;
+    height: 20px;
+}
+#option-heading:hover .option-heading{
+    display: block;
+}
 /* footer */
 .footer {
     background-color: #e6f2f9;

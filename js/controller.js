@@ -2,12 +2,73 @@ text = document.querySelector('textarea')
 content = document.querySelector('.content-text')
 
 text.onkeyup = function(){ 
-    content.innerHTML = format(text.value).join('')   
+    content.innerHTML =` ${format(text.value).join('')}` 
 }
+document.onmousemove = function(){ 
+    content.innerHTML =` ${format(text.value).join('')}` 
+}
+
+$('.header-h').click(function(){
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    const hh = this.className.match(/[0-9]/gi)[0]-'0'
+    var h = ''
+    for(var i=0;i<hh;i++){
+       h+='#'
+    }
+
+    text.value = text.value.slice(0,start-1) + h +'Header' + text.value.slice(start,text.length)
+})
+$('#option-bold').click(function(){
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    text.value = text.value.slice(0,start) + '**' + text.value.slice(start,end) +'**' +text.value.slice(end,text.length)
+})
+$('#option-italic').click(function(){
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    text.value = text.value.slice(0,start) + '*' + text.value.slice(start,end) +'*'+text.value.slice(end,text.length)
+})
+$('#option-underline').click(function(){
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    text.value = text.value.slice(0,start) + '++' + text.value.slice(start,end) +'++'+text.value.slice(end,text.length)
+})
+$('#option-link').click(function(){
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    text.value = text.value.slice(0,start-1) + '[text](href)' + text.value.slice(start,end)
+})
+$('#option-image').click(function(){
+    let img
+    let start = text.selectionStart 
+    let end = text.selectionEnd
+    let upload = document.createElement('input')
+    upload.setAttribute("type", "file")
+    upload.click()
+    const reader = new FileReader();
+    upload.addEventListener("change", (event) => {
+        // Lấy thông tin tập tin được đăng tải
+        const files  = event.target.files;
+        
+        // Đọc thông tin tập tin đã được đăng tải
+        reader.readAsDataURL(files[0])
+        
+        // Lắng nghe quá trình đọc tập tin hoàn thành
+        reader.addEventListener("load", (event) => {
+            // Lấy chuỗi Binary thông tin hình ảnh
+            img = event.target.result;
+            text.value = text.value.slice(0,start-1) + `![img](${img})` + text.value.slice(start,end)
+        })
+    })
+   
+})
+
+
+
 
 function format(text){
     let content = []
-    let rt =``
     if(typeof text != typeof 'ok'){
         return false
     }
@@ -64,10 +125,8 @@ function format(text){
         if(img!=null){
             for (let img_item of img) {
                 let img_old = img_item
-                console.log(img_item)
                 img_item = img_item.match(/\([^]+\)/gi)[0]
                 img_item = img_item.match(/[^\(,\)]+/gi)[0]
-                console.log(img_item)
                 e = e.replace(img_old,`<br><img src="${img_item}"><br>`)        
             }
         }
@@ -84,7 +143,6 @@ function format(text){
         }
         return `<p>${e}</p>`
      }else{
-         console.log(item.trim().slice(0,6))
         if(item.trim().slice(0,6) == '######'){
             return `<h6>${e.match( /[^#]+/g)[0]}</h6>`
         } else  
@@ -103,7 +161,9 @@ function format(text){
             return `<h2>${e.match( /[^#]+/g)[0]}</h2>`
         }
         else 
-            return `<h1>${e.match( /[^#]+/g)[0]}</h1>`
+                return `<h1>${e.match( /[^#]+/g)[0]}</h1>`
+
+           
      }
   })
    return content_fm
