@@ -3,12 +3,12 @@ var app = angular.module('Virus', ['ngRoute']);
 app.config(function($routeProvider){
    $routeProvider
    .when('/Virus',{
-     controller: 'HomeController',
-     templateUrl:'views/home.html'
+     controller: 'Virus',
+     templateUrl:'views/Content.html'
    })
     .when('/Virus/:id',{
-     controller: 'EmailController',
-     templateUrl:'views/email.html'
+     controller: 'Content',
+     templateUrl:'views/Virus.html'
    })
    .otherwise({
      redirectTo:'/Virus'

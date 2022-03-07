@@ -817,7 +817,9 @@ li.nd{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
+.container-blog{
+    margin-top: 40px;
+}
 .pic img{
     cursor: pointer;
     width: 430px;
