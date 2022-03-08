@@ -1,4 +1,4 @@
-text = document.querySelector('textarea')
+text = document.querySelector('#blog')
 content = document.querySelector('.content-text')
 text.value = 
 `![img](/img/1.svg)
