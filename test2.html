@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>JavaScript Strings</h1>
-<h2>The match() Method</h2>
-
-<p>abc [img](abcd) fg  </p>
-
-<p>Do a search for "ain":</p>
-
-<p id="demo"></p>
-<li>ok</li>
-<li>ok</li>
-<li>ok</li>
-<li>ok</li>
-<li>ok</li>
-
+<TEXTAREA id="text">Hello, How are You?</TEXTAREA><BR>
+    <INPUT type="button" onclick="disp()" value="Select text and click here" />
 <script>
-let text = "[123](abcd) fg  ";
-let a = text.match(/\[[^]+\]\([^]+\)/gi);
-console.log(a)
-let link = a[0].match(/\[[^]+\]/gi);
-let href = a[0].match(/\([^]+\)/gi);
-console.log(link)
-link = link[0].match(/[^\[][^]+[^\]]/gi);
-href = href[0].match(/[^\()][^]+[^\)]/gi);
-console.log(link[0],href[0])
-document.getElementById("demo").innerHTML = text;
-</script>
-
-</body>
-</html>
+    function disp() {
+  var text = document.getElementById("text");
+  var t = text.value.substr(text.selectionStart, text.selectionEnd - text.selectionStart);
+  alert(t);
+}
+</script>    

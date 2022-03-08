@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Vertex.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+  
+
+    <title>Home</title>
+</head>
+<body>
+<header class="header">
+    <!-- <div class="body-background-color">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+            <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+          </svg>
+    </div> -->
+    <div class="container">
+        <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid nav-header p-0">
+                <a class="homelogo" href="index.html" >
+                    <img  src="./img/Vertex.jpg" alt="">
+                    <span class="home_trademark" >Vertex</span>
+                </a>    
+                <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                        <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" >
+                        <li class="navbar-item home-navbar-item" data-aos="fade-right"   data-aos-delay="0">
+                             <a class="menu-nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="50">
+                            <a class="menu-nav-link" aria-current="page" href="./lsvr.html">Virus</a>
+                       </li>
+                       <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="150">
+                            <a class="menu-nav-link" aria-current="page" href="./blog.html">Blog</a>
+                        </li>
+                       <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="100">
+                            <a class="menu-nav-link" aria-current="page" href="#">Contact</a>
+                       </li>
+                        <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="200">
+                             <a class="menu-nav-link" aria-current="page" href="./about.html">About</a>
+                        </li>
+                       
+                        <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="250">
+                            <a class="menu-nav-link" aria-current="page" href="setting.html"><i class="fa-solid fa-user-large"></i></a>
+                       </li>
+                    </ul>
+                
+                </div>
+            </div>
+                 
+        </nav>
+    </div>
+</header>
+<nav class="container-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="form-search">
+                    <input type="text" placeholder="Search..">
+                </form>
+                <div class="drop-down-search col-12 d-none">
+                   <ul>
+                       <li>ok</li>
+                       <li>ok</li>
+                       <li>ok</li>
+                       <li>ok</li>
+                       <li>ok</li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box-dropdown">
+                    <div class="dropdown-option-list d-xl-none">
+                        <button class="btn btn-bd-light" id="btn-option-list">
+                            <span class="d-lg-inline">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+                                <title>Expand</title>
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                                </svg>
+
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse d-none" fill="currentColor" viewBox="0 0 16 16">
+                                    <title>Collapse</title>
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                                  </svg>
+                            
+                            </span>
+                        </button>
+                    </div>
+    
+                    <div class="dropdown dropdown-language">
+                        <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            <span class="d-none d-lg-inline">English</span> v5.1
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                            <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="">v4.6.x</a></li>
+                            <li><a class="dropdown-item" href="">v3.4.1</a></li>
+                            <li><a class="dropdown-item" href="">v2.3.2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="">All versions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+<div class="body container">
+    <article class="header-title">
+        <div class="row">
+            <div class="col-12 col-xl-2 static-top">
+                <div class="menu-left">
+                    <ul class="menu-option-list">
+                        <select style="width:100%" id="states">
+                            <optgroup label="A">
+                                <option value="AK"><a href="#/Virus/0">Alaska</a> </option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                        </select>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Overview</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#/Hository">History</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#/Origin">Origin</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#/Characteristics">Characteristics</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#/Replication">Replication</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#/Classify">Classify</a> </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Human virus</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch Tễ Học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Dịch và đại dịch</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Ung thư</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Cơ chế phòng ngự</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Phòng tránh</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Đường lây nhiễm</a> </li>
+                            </ul>
+                        </li>
+    
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Ứng Dụng</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Khoa học y học</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#"> Khoa học vật liệu</a></li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Virus nhân tạo</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">Vũ khí sinh học</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Vai trò</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-option-item">
+                            <button class="btn-drop-down"> <i class="fa-solid fa-angle-right"></i>Lây nhiễm</button>
+                            <ul class="menu-sub">
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                                <li class="item-menu-sub"> <a class="link-menu-sub" href="#">ok</a> </li>
+                            </ul>
+                        </li>
+                        <hr class="d-xl-none">
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="col-12 col-xl-10" ng-app="Virus">
+             
+                    <div ng-view></div>
+            
+            </div>
+            
+            </div>
+    </article>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <div>
+                    <div>
+                        <span class="home_trademark">Vertex</span>
+                    <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt=""> &nbsp; 24/7 support</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                        </li>
+                    </ul>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+    
+                    </div>
+                    
+                    <div>
+                        <span class="home_trademark">Virus dictionary for phones</span>
+                        <div class="footer-apps">
+                            <img class="img-qr-code" src="./img/qrcode.png" alt="">
+                            <ul class="app-list">
+                                <li class="app-list-item">
+                                    <img src="./img/app_store.png" alt="">
+                                </li>
+                                <li class="app-list-item">
+                                    <img src="./img/google_play.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+            </div>
+            <div class="col-3 col-lg-2">
+                <span class="home_trademark">Information</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-lg-2">
+                <span class="home_trademark">Contact</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Who are we?</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Legal Notice</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+                <span class="home_trademark">Where to find us?</span>
+                <p class="footer-map-icon">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England
+                </p>
+
+                <div class="footer-map">
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4" allowfullscreen="" title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/select2.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#states").select2();
+    });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="./js/animate.js"></script>
+<script src="./js/select2.js"></script>
+<script src="./js/model.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#states").select2();
+    });
+</script>
+
+<script src="js/app.js"></script>
+<!-- Controllers -->
+<script src="js/controllers/Virus.js"></script>
+
+<script src="js/controllers/Content.js"></script>
+<!-- Services -->
+<script src="js/services/content.js"></script>
+
+
+
+</body>
+</html>
