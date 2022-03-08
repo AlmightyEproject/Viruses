@@ -49,6 +49,9 @@
 
 }
 @media (max-width: 768px) {
+    .blog-card-topic{
+        display: none;
+    }
     .profile-user-box{
         justify-content: space-between;
     }

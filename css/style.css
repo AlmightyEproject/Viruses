@@ -541,7 +541,8 @@ li.nd{
     /* height: 166px; */
 }
 .blog-card-content {
-    padding: 0 16px;
+
+    padding: 4px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -553,7 +554,6 @@ li.nd{
     color: #018cca;
 }
 .blog-card-content-link {
-    margin: 10px 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -698,6 +698,7 @@ li.nd{
 }
 .item-history  .blog-card-img{
     border-radius: 8px;
+    object-fit: cover
 }
 .btn-more-history{
     text-align: left;
