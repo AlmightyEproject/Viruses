@@ -12,6 +12,7 @@ dd{
 body {
     background-color: #f4f9f8;
     position: relative;
+   
 }
 div.share{
     display: flex;
@@ -72,7 +73,9 @@ li.nd{
 .nav-header {
     height: 56px;
 }
-
+.body{
+    margin-bottom: 40px;
+}
 .body-background-color {
     z-index: -999;
     position: absolute;
