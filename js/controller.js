@@ -8,9 +8,9 @@ document.onmousemove = function(){
     content.innerHTML =` ${format(text.value).join('')}` 
 }
 
-// document.onmousemove = function(){ 
-//     content.innerHTML =` ${format(text.value).join('')}` 
-// }
+
+
+
 
 $('.header-h').click(function(){
     let start = text.selectionStart 
