@@ -835,6 +835,7 @@ li.nd{
     transform: rotate(45deg);
 }
 .container-blog{
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 .pic img{
