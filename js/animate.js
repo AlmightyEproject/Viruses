@@ -43,4 +43,8 @@ $(document).ready(function(){
     })
 })
 
+$('.link-menu-sub').click(function(){
+    $('.link-menu-sub').removeClass('active')
+    $(this).toggleClass('active')
+})
 

@@ -1,18 +1,6 @@
 text = document.querySelector('#blog')
 content = document.querySelector('.content-text')
-text.value = 
-`![img](/img/1.svg)
-#H1
-##H2
-###H3
-####H4
-#####H5
-#####H6
-Vertex
-**B**
-*I*
-++T++
-[text](href)`
+
 text.onkeyup = function(){ 
     content.innerHTML =` ${format(text.value).join('')}` 
 }
