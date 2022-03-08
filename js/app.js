@@ -12,17 +12,163 @@ app.config(function($routeProvider){
 
     templateUrl:'views/characteristics.html'
   })
+  .when('/ROI',{
+    templateUrl:'views/ROI.html'
+  })
+
   .when('/Replication',{
     templateUrl:'views/replication.html'
   })
   .when('/Classify',{
     templateUrl:'views/classify.html'
   })
-  .when('/Hawaii',{
-    templateUrl:'views/test.html'
+  .when('/Epidemiology',{
+    templateUrl:'views/epidemiology.html'
+  })
+  .when('/Cancer',{
+    templateUrl:'views/cancer.html'
+  })
+  .when('/DM',{
+    templateUrl:'views/DM.html'
+  })
+  .when('/Prevent',{
+    templateUrl:'views/Prevent.html'
   })
   
-   .otherwise({
+  
+  .when('/Adeno',{
+    templateUrl:'views/Adeno'
+  }) 
+.when('/Aichi',{
+    templateUrl:'views/Aichi'
+  }) 
+.when('/Australian',{
+    templateUrl:'views/Australian'
+  }) 
+.when('/Barmah',{
+    templateUrl:'views/Barmah'
+  }) 
+.when('/Bunya',{
+    templateUrl:'views/Bunya'
+  }) 
+.when('/Corona',{
+    templateUrl:'views/Corona'
+  }) 
+.when('/Cowpox',{
+    templateUrl:'views/Cowpox'
+  }) 
+.when('/Coxsackie',{
+    templateUrl:'views/Coxsackie'
+  }) 
+.when('/Dhori',{
+    templateUrl:'views/Dhori'
+  }) 
+.when('/Duvenhage',{
+    templateUrl:'views/Duvenhage'
+  }) 
+.when('/Ebola',{
+    templateUrl:'views/Ebola'
+  }) 
+.when('/Echo',{
+    templateUrl:'views/Echo'
+  }) 
+.when('/GB',{
+    templateUrl:'views/GB'
+  }) 
+.when('/Hantaan',{
+    templateUrl:'views/Hantaan'
+  }) 
+.when('/Herpes',{
+    templateUrl:'views/Herpes'
+  }) 
+.when('/HIV',{
+    templateUrl:'views/HIV'
+  }) 
+.when('/Influenza',{
+    templateUrl:'views/Influenza'
+  }) 
+.when('/Isfahan',{
+    templateUrl:'views/Isfahan'
+  }) 
+.when('/JC-polyoma',{
+    templateUrl:'views/JC-polyoma'
+  }) 
+.when('/Junin-arena',{
+    templateUrl:'views/Junin-arena'
+  }) 
+.when('/Kunjin',{
+    templateUrl:'views/Kunjin'
+  }) 
+.when('/KI-Polyoma',{
+    templateUrl:'views/KI-Polyoma'
+  }) 
+.when('/Langat',{
+    templateUrl:'views/Langat'
+  }) 
+.when('/Lassa',{
+    templateUrl:'views/Lassa'
+  }) 
+.when('/Machupo',{
+    templateUrl:'views/Machupo'
+  }) 
+.when('/Mayaro',{
+    templateUrl:'views/Mayaro'
+  }) 
+.when('/Measles',{
+    templateUrl:'views/Measles'
+  }) 
+.when('/Nipah',{
+    templateUrl:'views/Nipah'
+  }) 
+.when('/Norwalk',{
+    templateUrl:'views/Norwalk'
+  }) 
+.when('/Orf',{
+    templateUrl:'views/Orf'
+  }) 
+.when('/Oropouche',{
+    templateUrl:'views/Oropouche'
+  }) 
+.when('/Pichinde',{
+    templateUrl:'views/Pichinde'
+  }) 
+.when('/Polio',{
+    templateUrl:'views/Polio'
+  }) 
+.when('/Puumala',{
+    templateUrl:'views/Puumala'
+  }) 
+.when('/Rabies',{
+    templateUrl:'views/Rabies'
+  }) 
+.when('/Rosa',{
+    templateUrl:'views/Rosa'
+  }) 
+.when('/Rubella',{
+    templateUrl:'views/Rubella'
+  }) 
+.when('/Sapporo',{
+    templateUrl:'views/Sapporo'
+  }) 
+.when('/Seoul',{
+    templateUrl:'views/Seoul'
+  }) 
+.when('/Sindbis',{
+    templateUrl:'views/Sindbis'
+  }) 
+.when('/Variola',{
+    templateUrl:'views/Variola'
+  }) 
+.when('/Vaccinia',{
+    templateUrl:'views/Vaccinia'
+  }) 
+.when('/Venezuelan',{
+    templateUrl:'views/Venezuelan'
+  }) 
+.when('/Zika',{
+    templateUrl:'views/Zika'
+  }) 
+.otherwise({
      redirectTo:'/History'
    })
 })
