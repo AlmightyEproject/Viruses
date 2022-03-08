@@ -1426,7 +1426,7 @@
             }
 
             children = this.findHighlightableChoices().find('.select2-result-label');
-            let test = $('.select2-results-dept-1')
+            let test = $('.select2-result-label')
             test.each(function(index,value){  
                 value.addEventListener("mouseup", function(e){   
                     let a = document.createElement('a')

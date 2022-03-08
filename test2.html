@@ -1,9 +1,0 @@
-<TEXTAREA id="text">Hello, How are You?</TEXTAREA><BR>
-    <INPUT type="button" onclick="disp()" value="Select text and click here" />
-<script>
-    function disp() {
-  var text = document.getElementById("text");
-  var t = text.value.substr(text.selectionStart, text.selectionEnd - text.selectionStart);
-  alert(t);
-}
-</script>    
