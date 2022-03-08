@@ -1,12 +1,28 @@
 text = document.querySelector('textarea')
 content = document.querySelector('.content-text')
-
+text.value = 
+`![img](/img/1.svg)
+#H1
+##H2
+###H3
+####H4
+#####H5
+#####H6
+Vertex
+**B**
+*I*
+++T++
+[text](href)`
 text.onkeyup = function(){ 
     content.innerHTML =` ${format(text.value).join('')}` 
 }
-document.onmousemove = function(){ 
+document.onmousemove = function(){
     content.innerHTML =` ${format(text.value).join('')}` 
 }
+
+// document.onmousemove = function(){ 
+//     content.innerHTML =` ${format(text.value).join('')}` 
+// }
 
 $('.header-h').click(function(){
     let start = text.selectionStart 
@@ -17,7 +33,7 @@ $('.header-h').click(function(){
        h+='#'
     }
 
-    text.value = text.value.slice(0,start-1) + h +'Header' + text.value.slice(start,text.length)
+    text.value = '\n' + text.value.slice(0,start-1) + h +'Header' + text.value.slice(start,text.length)
 })
 $('#option-bold').click(function(){
     let start = text.selectionStart 
@@ -58,7 +74,7 @@ $('#option-image').click(function(){
         reader.addEventListener("load", (event) => {
             // Lấy chuỗi Binary thông tin hình ảnh
             img = event.target.result;
-            text.value = text.value.slice(0,start-1) + `![img](${img})` + text.value.slice(start,end)
+            text.value = text.value.slice(0,start-1) + `![img](/img/1.svg)\n` + text.value.slice(start,end)
         })
     })
    
@@ -85,12 +101,24 @@ function format(text){
   content_fm = content.map(function(e){
      let item = e
      if(item.trim()[0] !='#'){
+
+        let img = item.match(/\!\[img\]\([^*]+\)/gi)
+    
+        if(img!=null){
+            for (let img_item of img) {
+                img_item = img_item.replace('![img](','')
+                img_item = img_item.replace(')','')
+                e = `<br><img src="${img_item}"><br>`      
+                
+            }
+        }
+
         let strong_em = item.match(/\*\*\*[^*]+\*\*\*/gi);
         if(strong_em!=null){
             for (let em_item of strong_em) {
                 let em_old = em_item
                 em_item = em_item.match(/[^*]+/gi)
-                e = e.replace(em_old,`<strong><ins>${em_item}</ín></strong>`)
+                e = e.replace(em_old,`<strong><em>${em_item}</em></strong>`)
             }
         }
 
@@ -121,24 +149,17 @@ function format(text){
             }
         }
 
-        let img = item.match(/\!\[img\]\([^*]+\)+/gi)
-        if(img!=null){
-            for (let img_item of img) {
-                let img_old = img_item
-                img_item = img_item.match(/\([^]+\)/gi)[0]
-                img_item = img_item.match(/[^\(,\)]+/gi)[0]
-                e = e.replace(img_old,`<br><img src="${img_item}"><br>`)        
-            }
-        }
 
         let a = item.match(/\[[^]+\]\([^]+\)/gi)
         if(a!=null){
             for (let a_item of a) {
                 let link = a_item.match(/\[[^]+\]/gi);
                 let href = a_item.match(/\([^]+\)/gi);
-                link = link[0].match(/[^\[,\]]+/gi)
-                href = href[0].match(/[^\(,\)]/gi)
-                e = e.replace(a_item,`<a href="${href[0]}">${link[0]}</a>`)
+                link = link[0].replace(/\[/gi, '')
+                href = href[0].replace(/\(/gi, '')
+                link = link.replace(/\]/gi, '')
+                href = href.replace(/\)/gi, '')
+                e = e.replace(a_item,`<a href="${href}">${link}</a>`)
             }
         }
         return `<p>${e}</p>`

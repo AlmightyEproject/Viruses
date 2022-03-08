@@ -6,12 +6,28 @@ app.config(function($routeProvider){
   //    controller: 'Virus',
   //    templateUrl:'views/Content.html'
   //  })
-    .when('/Virus/',{
+    .when('/History',{
      controller: 'Content',
-     templateUrl:'views/lsvr.html'
+     templateUrl:'views/history.html'
    })
-   
+   .when('/Origin',{
+    controller: 'Content',
+    templateUrl:'views/origin.html'
+  })
+  .when('/Characteristics',{
+    controller: 'Content',
+    templateUrl:'views/characteristics.html'
+  })
+  .when('/Replication',{
+    controller: 'Content',
+    templateUrl:'views/replication.html'
+  })
+  .when('/Classify',{
+    controller: 'Content',
+    templateUrl:'views/classify.html'
+  })
+ 
    .otherwise({
-     redirectTo:'/Virus/'
+     redirectTo:'/History'
    })
 })
