@@ -15,7 +15,7 @@ $(document).ready(function(){
        $(this).find('i').toggleClass('fa-envelope fa-envelope-open')
     })
 
-    $('.btn').click(function(){
+    $('#btn-sub').click(function(){
         $('.overlay-login').show()
         $('.box-form-login').animate({
             top: '120px',

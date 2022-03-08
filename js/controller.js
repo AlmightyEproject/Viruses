@@ -150,7 +150,7 @@ function format(text){
                 e = e.replace(a_item,`<a href="${href}">${link}</a>`)
             }
         }
-        return `<p>${e}</p>`
+        return `<p class="">${e}</p>`
      }else{
         if(item.trim().slice(0,6) == '######'){
             return `<h6>${e.match( /[^#]+/g)[0]}</h6>`
