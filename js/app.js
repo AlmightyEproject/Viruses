@@ -89,6 +89,9 @@ app.config(function($routeProvider){
 .when('/Duvenhage',{
     templateUrl:'views/Duvenhage.html'
   }) 
+  .when('/Mers',{
+    templateUrl:'views/Mers.html'
+  }) 
 .when('/Ebola',{
     templateUrl:'views/Ebola.html'
   }) 
@@ -101,6 +104,10 @@ app.config(function($routeProvider){
 .when('/Hantaan',{
     templateUrl:'views/Hantaan.html'
   }) 
+  .when('/Rhabdo',{
+    templateUrl:'views/Rhabdo.html'
+  }) 
+  
 .when('/Herpes',{
     templateUrl:'views/Herpes.html'
   }) 
