@@ -207,6 +207,9 @@ li.nd{
     margin-top: 70px;
     border: none;
 }
+.card div * {
+    margin-left: 132px;
+}
 .card-title {
     font-size: 28px;
     color: #018cca;
@@ -225,6 +228,7 @@ li.nd{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 .card .card-link {
     margin-top: 20px;
@@ -425,6 +429,7 @@ li.nd{
     align-items: center;
 }
 .menu-option-item {
+    z-index: -1;
     line-height: 40px;
 }
 .btn-drop-down i {
@@ -1433,6 +1438,7 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
 }
 
 .select2-drop {
+    z-index: 999;
     width: 100%;
     margin-top: -1px;
     position: absolute;
