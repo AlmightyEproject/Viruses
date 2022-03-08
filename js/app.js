@@ -15,6 +15,32 @@ app.config(function($routeProvider){
   .when('/ROI',{
     templateUrl:'views/ROI.html'
   })
+  .when('/MedicalScience',{
+    templateUrl:'views/MedicalScience.html'
+  })
+  .when('/MaterialsScience',{
+    templateUrl:'views/MaterialsScience.html'
+  })
+  .when('/ArtificialVirus',{
+    templateUrl:'views/ArtificialVirus.html'
+  })
+  .when('/Virus-WaterEcosystem',{
+    templateUrl:'views/Virus-WaterEcosystem.html'
+  })
+  .when('/Virus-Evolution',{
+    templateUrl:'views/Virus-Evolution.html'
+  })
+  .when('/Virus-Evolution',{
+    templateUrl:'views/Virus-Human.html'
+  })
+  
+  .when('/Prevent',{
+    templateUrl:'views/Prevent.html'
+  })
+  
+  .when('/BiologicalWeapons',{
+    templateUrl:'views/BiologicalWeapons.html'
+  })
 
   .when('/Replication',{
     templateUrl:'views/replication.html'
@@ -165,7 +191,10 @@ app.config(function($routeProvider){
 .when('/Venezuelan',{
     templateUrl:'views/Venezuelan'
   }) 
-.when('/Zika',{
+.when('/Epidemic',{
+    templateUrl:'views/Epidemic.html'
+  }) 
+  .when('/Zika',{
     templateUrl:'views/Zika'
   }) 
 .otherwise({
