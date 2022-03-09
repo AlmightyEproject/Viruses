@@ -523,7 +523,10 @@ li.nd{
     z-index: 10;
 }
 /* Blog */
-
+.tag-rows{
+    display: flex;
+    justify-content: center;
+}
 .blog-card {
     display: flex;
     margin-top: 24px;
@@ -850,6 +853,7 @@ li.nd{
 }
 .container-blog{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 .pic img{
     cursor: pointer;
