@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Vertex.jpg" />
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <title>Home</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <!-- <div class="body-background-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+                    <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+                  </svg>
+            </div> -->
+            <div class="container">
+                <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid nav-header p-0">
+                        <a class="homelogo" href="index.html">
+                            <img src="./img/Vertex.jpg" alt="">
+                            <span class="home_trademark">Vertex</span>
+                        </a>    
+                        <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                                <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="0">
+                                     <a class="menu-nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="50">
+                                    <a class="menu-nav-link" aria-current="page" href="./Virus.html">Virus</a>
+                               </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="150">
+                                    <a class="menu-nav-link" aria-current="page" href="./blog.html">Blog</a>
+                                </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="100">
+                                    <a class="menu-nav-link" aria-current="page" href="./contact.html">Contact</a>
+                               </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="200">
+                                     <a class="menu-nav-link" aria-current="page" href="./about.html">About</a>
+                                </li>
+                               
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="250">
+                                    <a class="menu-nav-link" aria-current="page" href="setting.html"><i class="fa-solid fa-user-large"></i></a>
+                               </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                         
+                </nav>
+            </div>
+        </header>
+        <nav class="container-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <form id="form-search">
+                            <input type="text" placeholder="Search..">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown dropdown-language">
+                            <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span class="d-none d-lg-inline">English</span><img class="img-flag-lang" src="./img/flag-1.jpg" alt=""></button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                                <li><a class="dropdown-item current" href="#">Vietnamese <img class="img-flag-lang" src="./img/flag3.png" alt=""> </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Chinese <img class="img-flag-lang" src="./img/flag5.jpg" alt=""></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Germam <img class="img-flag-lang" src="./img/flag-2.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container container-blog">
+            <section class="post-full-meta">
+                <span class="blog-update">FEBRUARY 10, 2022</span> /
+                <a href="" class="hastag">#Covid19</a>
+            </section>
+
+            <h1 class="blog-title">Covid-19 vaccines. What you need to know after the injection
+            </h1>
+
+            <section class="blog-author">
+                <img src="./img/Dl.jpg" alt="" />
+                <a href="" class="blog-author-name">Duy Linh</a>
+                <button class="btn-follower-author"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+            </section>
+
+            <img class="blog-img-content blog-img-title" src="./img/blog2.jpg" alt="" />
+
+            <section>
+                    <p>A COVID‑19 vaccine is a vaccine intended to provide acquired immunity against severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2), the virus that causes coronavirus disease 2019 (COVID‑19).</p>
+                    <p>
+                        Prior to the COVID‑19 pandemic, an established body of knowledge existed about the structure and function of coronaviruses causing diseases like severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome
+                        (MERS). This knowledge accelerated the development of various vaccine platforms during early 2020.The initial focus of SARS-CoV-2 vaccines was on preventing symptomatic, often severe illness. On 10 January 2020, the SARS-CoV-2
+                        genetic sequence data was shared through GISAID, and by 19 March, the global pharmaceutical industry announced a major commitment to address COVID‑19.
+                    </p>
+                    <p>
+                        The COVID‑19 vaccines are widely credited for their role in reducing the severity and death caused by COVID‑19. Many countries have implemented phased distribution plans that prioritize those at highest risk of complications,
+                        such as the elderly, and those at high risk of exposure and transmission, such as healthcare workers.
+                    </p>
+                    <p>
+                        As of 22 January 2022, 9.87 billion doses of COVID‑19 vaccines have been administered worldwide based on official reports from national public health agencies. By December 2020, more than 10 billion vaccine doses had been
+                        preordered by countries, with about half of the doses purchased by high-income countries comprising 14% of the world's population
+                    </p>
+                    <figure>
+                        <p class="p-img"><img src="img/blog20.png"></p> <figcaption>COVID‑19 vaccine doses administered by continent as of Oct 11, 2021. For vaccines that require multiple doses, each individual dose is counted. As the same person may receive more than one dose, the number of doses can be higher than the number of people in the population.</figcaption>
+                    </figure>
+                    <figure>
+                        <p class="p-img"><img src="img/blog21.png"></p> <figcaption>
+
+                            Map showing share of population fully vaccinated against COVID-19 relative to a country's total population
+                            </figcaption>
+                    </figure>
+
+                    <p>Map showing share of population fully vaccinated against COVID-19 relative to a country's total population</p>
+                    <p>A US airman receiving a COVID‑19 vaccine, December 2020</p>
+                    <p>Vaccine types</p>
+                    <p>
+                        At least nine different technology platforms are under research and development to create an effective vaccine against COVID‑19. Most of the platforms of vaccine candidates in clinical trials are focused on the coronavirus spike
+                        protein (S protein) and its variants as the primary antigen of COVID‑19 infection, since the S protein triggers strong B-cell and T-cell immune responses. However, other coronavirus proteins are also being investigated for
+                        vaccine development, like the nucleocapsid, because they also induce a robust T-cell response and their genes are more conserved and recombine less frequently (compared to Spike).
+                    </p>
+                    <p>Platforms developed in 2020 involved nucleic acid technologies (nucleoside-modified messenger RNA and DNA), non-replicating viral vectors, peptides, recombinant proteins, live attenuated viruses, and inactivated viruses.</p>
+                    <p>
+                        Many vaccine technologies being developed for COVID‑19 are not like vaccines already in use to prevent influenza, but rather are using "next-generation" strategies for precise targeting of COVID‑19 infection mechanisms. Several
+                        of the synthetic vaccines use a 2P mutation to lock the spike protein into its prefusion configuration, stimulating an adaptive immune response to the virus before it attaches to a human cell.Vaccine platforms in development may
+                        improve flexibility for antigen manipulation, and effectiveness for targeting mechanisms of COVID‑19 infection in susceptible population subgroups, such as healthcare workers, the elderly, children, pregnant women, and people
+                        with weakened immune systems.
+                    </p>
+                    <p>mRNA vaccines</p>
+                    <p>Diagram of the operation of an RNA vaccine. Messenger RNA contained in the vaccine enters cells and is translated into foreign proteins, which trigger an immune response.</p>
+                    <p>
+                        Several COVID‑19 vaccines, including the Pfizer–BioNTech and Moderna vaccines, have been developed to use RNA to stimulate an immune response. When introduced into human tissue, the vaccine contains either self-replicating RNA
+                        or messenger RNA (mRNA), which both cause cells to express the SARS-CoV-2 spike protein. This teaches the body how to identify and destroy the corresponding pathogen. RNA vaccines often, but not always, use nucleoside-modified
+                        messenger RNA. The delivery of mRNA is achieved by a coformulation of the molecule into lipid nanoparticles which protect the RNA strands and help their absorption into the cells.
+                    </p>
+                    <p>
+                        RNA vaccines were the first COVID‑19 vaccines to be authorized in the United Kingdom, the United States and the European Union. Authorized vaccines of this type are the Pfizer–BioNTech and Moderna vaccines.The CVnCoV RNA vaccine
+                        from CureVac failed in clinical trials.
+                    </p>
+                    <p>
+                        Severe allergic reactions are rare. In December 2020, 1,893,360 first doses of Pfizer–BioNTech COVID‑19 vaccine administration resulted in 175 cases of severe allergic reaction, of which 21 were anaphylaxis. For 4,041,396
+                        Moderna COVID‑19 vaccine dose administrations in December 2020 and January 2021, only ten cases of anaphylaxis were reported.Lipid nanoparticles (LNPs) were most likely responsible for the allergic reactions.
+                    </p>
+                    <p>Adenovirus vector vaccines</p>
+                    <p>
+                        These vaccines are examples of non-replicating viral vector vaccines, using an adenovirus shell containing DNA that encodes a SARS‑CoV‑2 protein.The viral vector-based vaccines against COVID‑19 are non-replicating, meaning that
+                        they do not make new virus particles, but rather produce only the antigen which elicits a systemic immune response.
+                    </p>
+                    <p>Authorized vaccines of this type are the Oxford–AstraZeneca COVID‑19 vaccine,the Sputnik V COVID‑19 vaccine,Convidecia, and the Janssen COVID‑19 vaccine.</p>
+                    <p>Convidecia and the Janssen COVID‑19 vaccine are both one-shot vaccines which offer less complicated logistics and can be stored under ordinary refrigeration for several months.</p>
+                    <p>Sputnik V uses Ad26 for its first dose, which is the same as Janssen's only dose, and Ad5 for the second dose, which is the same as Convidecia's only dose.</p>
+                    <p>On 11 August 2021, the developers of Sputnik V proposed, in view of the Delta case surge, that Pfizer test the Ad26 component (termed its 'Light' version) as a booster shot:</p>
+                    <p>
+                        Delta cases surge in US &amp; Israel shows mRNA vaccines need a heterogeneous booster to strengthen &amp; prolong immune response. #SputnikV pioneered mix&amp;match approach, combo trials &amp; showed 83.1% efficacy vs Delta.
+                        Today RDIF offers Pfizer to start trial with Sputnik Light as booster.
+                    </p>
+                    <p>Inactivated virus vaccines</p>
+                    <p>Inactivated vaccines consist of virus particles that are grown in culture and then killed using a method such as heat or formaldehyde to lose disease producing capacity, while still stimulating an immune response.</p>
+                    <p>
+                        Authorized vaccines of this type are the Chinese CoronaVac and the Sinopharm BIBP and WIBP vaccines; the Indian Covaxin; later this year the Russian CoviVac; the Kazakhstani vaccine QazVac; and the Iranian COVIran Barekat.
+                        Vaccines in clinical trials include the Valneva COVID‑19 vaccine.
+                    </p>
+                    <p>Subunit vaccines</p>
+                    <p>Subunit vaccines present one or more antigens without introducing whole pathogen particles. The antigens involved are often protein subunits, but can be any molecule that is a fragment of the pathogen.</p>
+                    <p>
+                        The authorized vaccines of this type are the peptide vaccine EpiVacCorona, ZF2001, MVC-COV1901,and Corbevax. Vaccines with pending authorizations or include the Novavax COVID‑19 vaccine, Soberana 02 (a conjugate vaccine), and
+                        the Sanofi–GSK vaccine.
+                    </p>
+                    <p>The V451 vaccine was previously in clinical trials, which were terminated because it was found that the vaccine may potentially cause incorrect results for subsequent HIV testing.</p>
+                    <p>Intranasal</p>
+                    <p>
+                        Intranasal vaccines target mucosal immunity in the nasal mucosa which is a portal for viral entrance to the body.These vaccines are designed to stimulate nasal immune factors, such as IgA. In addition to inhibiting the virus,
+                        nasal vaccines provide ease of administration because no needles (and the accompanying needle phobia) are involved. Nasal vaccines have been approved for other infections, such as influenza. As of 2021, only one nasal vaccine,
+                        Flumist (USA); Fluenz Tetra (European Union), had been authorized in the United States and Europe for use as an influenza vaccine.
+                    </p>
+                    <p>Other types</p>
+                    <p>
+                        Additional types of vaccines that are in clinical trials include virus-like particle vaccines, multiple DNA plasmid vaccines,at least two lentivirus vector vaccines,a conjugate vaccine, and a vesicular stomatitis virus
+                        displaying the SARS‑CoV‑2 spike protein.
+                    </p>
+                    <p>
+                        Scientists investigated whether existing vaccines for unrelated conditions could prime the immune system and lessen the severity of COVID‑19 infection.There is experimental evidence that the BCG vaccine for tuberculosis has
+                        non-specific effects on the immune system, but no evidence that this vaccine is effective against COVID‑19
+                    </p>
+                </div>
+            </section>
+            
+            
+           
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <span class="home_trademark">Vertex</span>
+                        <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt="" /> &nbsp; 24/7 support</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                            </li>
+                        </ul>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                        <span class="home_trademark">Virus dictionary for phones</span>
+                        <div class="footer-apps">
+                            <img class="img-qr-code" src="./img/qrcode.png" alt="" />
+                            <ul class="app-list">
+                                <li class="app-list-item">
+                                    <img src="./img/app_store.png" alt="" />
+                                </li>
+                                <li class="app-list-item">
+                                    <img src="./img/google_play.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Information</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Contact</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <span class="home_trademark">Where to find us?</span>
+                        <p class="footer-map-icon"><i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England</p>
+
+                        <div class="footer-map">
+                            <iframe
+                                frameborder="0"
+                                style="border: 0;"
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4"
+                                allowfullscreen=""
+                                title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

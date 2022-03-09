@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Vertex.jpg" />
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <title>Home</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <!-- <div class="body-background-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+                    <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+                  </svg>
+            </div> -->
+            <div class="container">
+                <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid nav-header p-0">
+                        <a class="homelogo" href="index.html">
+                            <img src="./img/Vertex.jpg" alt="">
+                            <span class="home_trademark">Vertex</span>
+                        </a>    
+                        <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                                <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="0">
+                                     <a class="menu-nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="50">
+                                    <a class="menu-nav-link" aria-current="page" href="./Virus.html">Virus</a>
+                               </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="150">
+                                    <a class="menu-nav-link" aria-current="page" href="./blog.html">Blog</a>
+                                </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="100">
+                                    <a class="menu-nav-link" aria-current="page" href="./contact.html">Contact</a>
+                               </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="200">
+                                     <a class="menu-nav-link" aria-current="page" href="./about.html">About</a>
+                                </li>
+                               
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="250">
+                                    <a class="menu-nav-link" aria-current="page" href="setting.html"><i class="fa-solid fa-user-large"></i></a>
+                               </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                         
+                </nav>
+            </div>
+        </header>
+        <nav class="container-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <form id="form-search">
+                            <input type="text" placeholder="Search..">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown dropdown-language">
+                            <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span class="d-none d-lg-inline">English</span><img class="img-flag-lang" src="./img/flag-1.jpg" alt=""></button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                                <li><a class="dropdown-item current" href="#">Vietnamese <img class="img-flag-lang" src="./img/flag3.png" alt=""> </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Chinese <img class="img-flag-lang" src="./img/flag5.jpg" alt=""></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Germam <img class="img-flag-lang" src="./img/flag-2.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container container-blog">
+            <section class="post-full-meta">
+                <span class="blog-update">FEBRUARY 10, 2022</span> /
+                <a href="" class="hastag">#Covid19</a>
+            </section>
+
+            <h1 class="blog-title">Some characteristics of the virus in humans.The formation of the virus.
+            </h1>
+
+            <section class="blog-author">
+                <img src="./img/QV.jpg" alt="" />
+                <a href="" class="blog-author-name">Vũ Viết Quý</a>
+                <button class="btn-follower-author"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+            </section>
+
+            <img class="blog-img-content blog-img-title" src="./img/blog4.jpg" alt="" />
+
+            <section>
+                    <h2>Viral characteristics that cause disease.</h2>
+                    <p>1. Structure.</p>
+                    <p>
+                        Viruses, also known as superbugs, have structural characteristics, the type of replication in the host cell is different from those of intracellular parasitic bacteria. A virus is considered structurally complete when it is capable
+                        of producing the transfer of nucleic acid from one cell to another. Each virus has only one of two types of genetic material, either RNA (ribonucleic acid) or AND (deoxyribonucleic acid), without metabolic enzymes and respiratory
+                        enzymes so they are required to parasitize in other receptor cells.
+                    </p>
+                    <p>The structure of the virus includes:</p>
+                    <p>1.1 General structure</p>
+                    <p>The two main parts are nucleic acid and capsid.</p>
+                    <p>
+                        * Nucleic acids: Each virus has only one of two types of genetic material, eitherRNA or DNA. Nucleic acids play an important role such as: Carrying genetic information,specific to each virus, determining the virus's ability to cause
+                        infection in the receptor cell, deciding the viral multiplication cycle in the receptor cell and being semi antigen-specific of the virus.
+                    </p>
+                    <p>
+                        * Capsid shell: It is the layer of protein that envelops the outside of nucleic acid.These proteins have the arrangement to form capsomer units. Capsid shells have the function of surrounding nucleic acids, protecting nucleic acids,
+                        they are also involved in the adhesion of viruses on the surface of the receptor cells and are resistant to viruses - &gt; applied in the diagnosis of viruses, while keeping the viral morphology and size stable.
+                    </p>
+                    <p></p>
+                    <p>The general structure of the virus that causes the disease</p>
+                    <p>1.2 Characteristic structure</p>
+                    <p>
+                        The characteristic structure of the virus is also known as the special structure, which is only available in certain viruses to perform the functions that characterize that virus and this is also the basis for determining the virus.
+                    </p>
+                    <p>* Viruses with outer shells and bare viruses</p>
+                    <p>* Viruses have a number of specific enzymes.</p>
+                    <p>2. Virus classification</p>
+                    <p>The virus can be classified by clinical symptoms, by form, transmission line, or by genetic material structure.</p>
+                    <p>2.1 Classification by form of virus</p>
+                    <p>In fact, each virus will have different body features such as fibers, spheres, complex shapes, rods, maces ...</p>
+                    <p>2.2 Classification according to the arrangement of capsid and nuleic acid</p>
+                    <p>
+                        It is possible to classify viruses according to the arrangement of nuleic acid and capsid because the virus is divided into 2 types of symmetry: cube symmetry and symmetry in the shape of a spiral. In the case of symmetrical viruses
+                        in the shape of spirals, nucleic acids and capsomers will be arranged along the spring shape evenly or unevenly, while in the case of cube symmetry, capsomers will be arranged into multifaceted spheres.
+                    </p>
+                    <p>Characteristic dangerous viruses</p>
+                    <p>2.3. Classification by symptomatics</p>
+                    <p>
+                        This is a classic classification, which has the advantage of being clinically advantageous but fundamentally inaccurate in terms of virology because in fact, a virus is also capable of causing many different diseases or a disease
+                        that can be caused by many different viruses:
+                    </p>
+                    <p>* Viruses that cause rashes: dengue fever, smallpox virus, measles, rubella ...</p>
+                    <p>* The virus causes disease in the nervous system: virus HIV, rabies virus</p>
+                    <p>* Viruses that cause diseases in the eyes: Newcastle, Herpes, virus Adeno...</p>
+                    <p>* Viruses that cause disease in the liver: The virus causes hepatitis A, B, C, D, E...</p>
+                    <p>* Viruses that cause gastritis, intestines: Norwalk, Rota virus ...</p>
+                    <p>* Sexually transmitted viruses: HIV virus, papiloma virus, hepatitis B virus, herpes virus</p>
+
+            
+</section>
+            
+           
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <span class="home_trademark">Vertex</span>
+                        <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt="" /> &nbsp; 24/7 support</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                            </li>
+                        </ul>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                        <span class="home_trademark">Virus dictionary for phones</span>
+                        <div class="footer-apps">
+                            <img class="img-qr-code" src="./img/qrcode.png" alt="" />
+                            <ul class="app-list">
+                                <li class="app-list-item">
+                                    <img src="./img/app_store.png" alt="" />
+                                </li>
+                                <li class="app-list-item">
+                                    <img src="./img/google_play.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Information</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Contact</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <span class="home_trademark">Where to find us?</span>
+                        <p class="footer-map-icon"><i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England</p>
+
+                        <div class="footer-map">
+                            <iframe
+                                frameborder="0"
+                                style="border: 0;"
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4"
+                                allowfullscreen=""
+                                title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -39,6 +39,9 @@
  
 
 }
+img{
+    object-fit:cover
+}
 @media (min-width: 768px)
 {
     .home-navbar-item .menu-nav-link {

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Vertex.jpg" />
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <title>Home</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <!-- <div class="body-background-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.705 0 513.705 369.447">
+                    <path style="stroke: rgb(79, 230, 183); fill: rgb(79, 230, 183); fill-opacity: 0.1; stroke-opacity: 0.1;" d="M 5.872 -1.537 C -31.444 95.904 25.896 206.81 183.31 206.192 C 285.842 205.789 324.298 229.7 342.714 270.388 C 386.836 367.869 436.964 358.583 499.956 366.321 C 499.956 366.321 498.399 0.784 498.512 1.348 C 498.625 1.912 9.564 -0.789 5.872 -1.537 Z"/>
+                  </svg>
+            </div> -->
+            <div class="container">
+                <nav class="homenavbar navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid nav-header p-0">
+                        <a class="homelogo" href="index.html">
+                            <img src="./img/Vertex.jpg" alt="">
+                            <span class="home_trademark">Vertex</span>
+                        </a>    
+                        <button class="navbar-toggler" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width: 24px;">
+                                <path stroke="#52bdf2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="0">
+                                     <a class="menu-nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="50">
+                                    <a class="menu-nav-link" aria-current="page" href="./Virus.html">Virus</a>
+                               </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="150">
+                                    <a class="menu-nav-link" aria-current="page" href="./blog.html">Blog</a>
+                                </li>
+                               <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="100">
+                                    <a class="menu-nav-link" aria-current="page" href="./contact.html">Contact</a>
+                               </li>
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="200">
+                                     <a class="menu-nav-link" aria-current="page" href="./about.html">About</a>
+                                </li>
+                               
+                                <li class="navbar-item home-navbar-item" data-aos="fade-right" data-aos-delay="250">
+                                    <a class="menu-nav-link" aria-current="page" href="setting.html"><i class="fa-solid fa-user-large"></i></a>
+                               </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                         
+                </nav>
+            </div>
+        </header>
+        <nav class="container-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <form id="form-search">
+                            <input type="text" placeholder="Search..">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown dropdown-language">
+                            <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span class="d-none d-lg-inline">English</span><img class="img-flag-lang" src="./img/flag-1.jpg" alt=""></button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                                <li><a class="dropdown-item current" href="#">Vietnamese <img class="img-flag-lang" src="./img/flag3.png" alt=""> </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Chinese <img class="img-flag-lang" src="./img/flag5.jpg" alt=""></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Germam <img class="img-flag-lang" src="./img/flag-2.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container container-blog">
+            <section class="post-full-meta">
+                <span class="blog-update">FEBRUARY 10, 2022</span> /
+                <a href="" class="hastag">#Covid19</a>
+            </section>
+
+            <h1 class="blog-title">Most common 'after-effects' of COVID-19 post recovery
+            </h1>
+
+            <section class="blog-author">
+                <img src="./img/QV.jpg" alt="" />
+                <a href="" class="blog-author-name">Vũ Viết Quý</a>
+                <button class="btn-follower-author"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+            </section>
+
+            <img class="blog-img-content blog-img-title" src="./img/blog1.jpg" alt="" />
+
+            <section>
+                    <h2>01.COVID-19 carries long term side-effects, warn experts</h2>
+                    <p >
+                        As infection cases continue to soar worldwide, the evidence is becoming clear that COVID is simply not just a cold or flu-like infection. It poses risk for people across all age groups, in different degrees and affects some more
+                        gravely than the others.
+                    </p>
+                    <p >
+                        On its impact on one's quality of life, we do know that the deadly respiratory virus can have longer-lasting side-effects. For many, viral load may have depleted but some typical symptoms, such as cough, itching throat and
+                        fatigue may continue to persist for weeks after combatting the illness. Recovered patients are returning to hospitals, complaining of heart issues, mental distress and much more. Hence, it is even more crucial that we do not
+                        simply wait for a vaccine to get over the COVID tide but take stringent measures to keep ourselves away from danger.
+                    </p>
+                    <h2>02.The study</h2>
+                    <p >
+                        A new study done in the UK has found more evidence pertaining to the same. 1 in 10 people may be bound to suffer from symptoms of the viral infection or damage, even after successfully recovering from it. Termed 'long COVID', a
+                        study conducted by the University of Leeds and Leeds Teaching Hospitals, NHS Trust examined the lives of some recovered COVID patients to identify a pattern of long-lasting symptoms and consequences of the disease, which are
+                        more likely to be experienced by people hospitalized due to the infection.
+                    </p>
+                    <h2>03.What are the symptoms of 'Long COVID'?</h2>
+                    <p >
+                        The study involved a total of 100 patients, who were split into two focus groups- 32 people who were termed to be critically ill and were hospitalized in intensive care units, while 68 were categorized as suffering from mild or
+                        moderate forms of infection, who did not need intensive ICU care. The findings of the study have been published in the Journal of Medical Virology.
+                    </p>
+                    <p >
+                        Upon analysis, it was reported that most patients admitted to suffering from one side-effect or persisting symptom ever after getting okay. There were an array of symptoms recorded, ranging from moderate to severe. It could be
+                        classified as follows
+                    </p>
+                    <h2>04.Fatigue</h2>
+                    <p >
+                        It can be tough to get back on your feet post-recovery. With COVID, long-lasting fatigue, weakness (which could persist for weeks and months) has been a much-feared consequence. Not only has COVID-fatigue been much widely
+                        discussed by experts, but nearly 60% of the patients involved in the study also admitted to suffering from fatigue, lethargy, tiredness in the weeks following recovery. Of these, 1/3rd, who suffered from a critical form of COVID
+                        termed their fatigue to be moderate or severe.
+                    </p>
+                    <p >Apart from this, unbalanced energy levels could also expose patients to experience related symptoms like muscle aches, pins and needles pain, palpitations</p>
+                    <p >
+                        Improper immune response and inflammatory attack (dubbed the infamous cytokine storm in COVID terminology) has been considered to be one of the causes of energy loss and imbalance. Post-recovery fatigue has also been recorded in
+                        the past outbreaks of infections like the SARS and Epstein-Barr virus.
+                    </p>
+                    <h2>05.Breathlessness</h2>
+                    <p ></p>
+                    <p ></p>
+                    <p >
+                        Breathlessness and tugging chest pain could be some of the primary symptoms which could pinpoint how bad your COVID infection is. However, for some patients who have made a recovery from the infection, breathlessness might
+                        persist for longer and throw them out of spin. Feeling out of breath, suffering from palpitations were termed to be the second most common after-effects of COVID, with patients admitting to have never suffered from the symptom
+                        before the illness. Again, this was found to be much more commonly occurring in those who required intensive care at the hospital.
+                    </p>
+                    <p >Breathlessness could also be an unpleasant symptom of heart damage or complication, which again, has been a much-feared about a long-term complication with the disease.</p>
+                    <h2>06.Memory and cognitive decline</h2>
+                    <p >
+                        As per the study's findings, one-quarter of the patients who had either moderate or severe form of COVID admitted to suffering from neuropsychological deficits and related symptoms. Symptoms likened to PTSD post-treatment were
+                        also observed. Mental distress, problems in memory comprehension or behavior could be triggered due to a variety of factors occurring both inside and outside the recovery center. From the fear of dying, pain, sleep deprivation,
+                        lack of mobility or proper communication, social isolation or delirium, all of these factors could make a person's fight with COVID much harder than we could possibly think.
+                    </p>
+                    <h2>07.Stress and anxiety</h2>
+                    <p >
+                        The lockdown has brought upon unprecedented stress to our lives but for those battling the disease, or who have made a recovery, stress and anxiety could be much harder to combat, making them more likely to suffer from
+                        psychological ailments in the long run. A separate study was done in Italy's hospitals also said that a combination of factors during treatment and post-recovery could increase the likelihood of a patient's mental well-being
+                        suffering. Insomnia, depression, anxiety and Obsessive-Compulsive Disorder (OCD) were commonly seen. It was also observed that women were more prone to experiencing psychological distress than men.
+                    </p>
+                    <h2>08.Degrading quality of life</h2>
+                    <p >
+                        Nearly 69% of the patients put under intensive care and 49% of those with mild to moderate infections admitted to suffering from problems in rehabilitating back to their lives. There have been links to the multitude of ways the
+                        virus could impact one's lung, heart, nervous system and leave deficits in other vital functioning. A sharp decline and degradation in the quality of life were one of the most commonly observed symptoms in a patient's
+                        post-treatment. Considering the host of symptoms detailed above and overall changes in their lifestyle, experts say that post-op rehabilitation is something that needs to be direly discussed with COVID treatment and recovery.
+                    </p>
+                </div>
+            </section>
+            
+           
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <span class="home_trademark">Vertex</span>
+                        <p class="p-content p-content-sm">Vertex is the world’s leading community for creatives to share, grow, and get hired.</p>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-phone"></i> &nbsp; +84326459773</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="fas fa-envelope"></i> &nbsp; support@vertex.com</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="./img/24-7.png" style="width: 16px;" alt="" /> &nbsp; 24/7 support</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><i class="far fa-lightbulb" style="font-size: 18px;"></i> &nbsp; Contributed ideas</a>
+                            </li>
+                        </ul>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                        <span class="home_trademark">Virus dictionary for phones</span>
+                        <div class="footer-apps">
+                            <img class="img-qr-code" src="./img/qrcode.png" alt="" />
+                            <ul class="app-list">
+                                <li class="app-list-item">
+                                    <img src="./img/app_store.png" alt="" />
+                                </li>
+                                <li class="app-list-item">
+                                    <img src="./img/google_play.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Information</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <span class="home_trademark">Contact</span>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#">Who are we?</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Legal Notice</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <span class="home_trademark">Where to find us?</span>
+                        <p class="footer-map-icon"><i class="fas fa-map-marker-alt"></i> &nbsp; Platform, New Station St, Leeds LS1 4JB, England</p>
+
+                        <div class="footer-map">
+                            <iframe
+                                frameborder="0"
+                                style="border: 0;"
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbSSHbFZZeUgRS6Oqsjr1glY&amp;key=AIzaSyAHJInb9NjBtEAJ-Dh84-1jMZcutsXN4T4"
+                                allowfullscreen=""
+                                title="map showing the location: Platform, New Station Street, Leeds, LS1 4JB"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
